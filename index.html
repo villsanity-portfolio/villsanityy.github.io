@@ -41,7 +41,15 @@
         "2025 Best Esports Stage Host of the Year - Philippine Esports Awards",
         "2023 Best Color Caster of the Year - Philippine Esports Awards"
       ],
-      "knowsAbout": ["VALORANT", "PUBG", "Crossfire", "Esports Shoutcasting", "Broadcast Hosting"],
+      "knowsAbout": [
+        "VALORANT Champions Tour", 
+        "Esports World Cup", 
+        "Crossfire APAC", 
+        "APAC Predator League", 
+        "UAAP Esports", 
+        "Esports Shoutcasting", 
+        "Broadcast Hosting"
+      ],
       "sameAs": [
         "https://www.facebook.com/villsanityy/",
         "https://x.com/VillSanityy",
@@ -61,6 +69,7 @@
                 <a href="#about" class="hover:text-brand-red transition">About</a>
                 <a href="#credentials" class="hover:text-brand-red transition">Achievements</a>
                 <a href="#highlights" class="hover:text-brand-red transition">Showreel</a>
+                <a href="#gallery" class="hover:text-brand-red transition">Gallery</a>
                 <a href="#contact" class="hover:text-brand-red transition">Booking</a>
             </div>
             <a href="#contact" class="bg-brand-red hover:bg-red-600 px-5 py-2 rounded-lg font-bold text-sm transition">Book Talent</a>
@@ -86,7 +95,7 @@
                 JUSTIN <span class="text-brand-red">"VILL"</span> VILLASERAN
             </h1>
             <p class="text-xl text-gray-300 font-light">
-                International Esports Host, Broadcast Desk Anchor, and Multi-Awarded FPS Shoutcaster. Veteran voice across VALORANT Masters, Esports World Cup, and APAC Championships.
+                International Esports Host, Broadcast Desk Anchor, and Multi-Awarded FPS Shoutcaster. Veteran voice across VALORANT Champions Tour, Esports World Cup, and Predator League.
             </p>
             <div class="flex flex-wrap gap-4 pt-2">
                 <a href="#highlights" class="bg-brand-red hover:bg-red-600 px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition">
@@ -106,16 +115,17 @@
         </div>
     </section>
 
-    <!-- MAJOR TITLES / CREDENTIALS -->
+    <!-- CLEAN STATIC TEXT NAMES SECTION (NO WRAPPING) -->
     <section id="credentials" class="bg-black/40 py-12 border-y border-gray-800">
-        <div class="max-w-6xl mx-auto px-6">
-            <p class="text-center text-xs font-bold uppercase tracking-widest text-gray-400 mb-8">Casted & Hosted S-Tier Global Broadcasts</p>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 font-bold text-lg md:text-xl text-gray-300">
-                <span>VCT MASTERS</span>
-                <span>ESPORTS WORLD CUP</span>
-                <span>CROSSFIRE APAC</span>
-                <span>PREDATOR LEAGUE</span>
-                <span>UAAP ESPORTS</span>
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-8">Casted & Hosted S-Tier Global Broadcasts</p>
+            
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-lg font-black tracking-wider text-gray-300 uppercase">
+                <span class="whitespace-nowrap hover:text-brand-red transition">VALORANT CHAMPIONS TOUR</span>
+                <span class="whitespace-nowrap hover:text-brand-gold transition">ESPORTS WORLD CUP</span>
+                <span class="whitespace-nowrap hover:text-red-500 transition">CROSSFIRE APAC</span>
+                <span class="whitespace-nowrap hover:text-blue-400 transition">PREDATOR LEAGUE</span>
+                <span class="whitespace-nowrap hover:text-yellow-400 transition">UAAP ESPORTS</span>
             </div>
         </div>
     </section>
@@ -154,6 +164,80 @@
         </div>
     </section>
 
+    <!-- BENTO ACTION GALLERY SECTION -->
+    <section id="gallery" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-800">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-black mb-3">ACTION GALLERY</h2>
+            <p class="text-gray-400">On stage, behind the desk, and live on S-Tier broadcasts.</p>
+
+            <!-- FILTER BUTTONS -->
+            <div class="flex flex-wrap justify-center gap-3 mt-8">
+                <button onclick="filterGallery('all', this)" class="gallery-btn bg-brand-red text-white px-5 py-2 rounded-lg font-bold text-sm transition">All</button>
+                <button onclick="filterGallery('stage', this)" class="gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition">Stage Hosting</button>
+                <button onclick="filterGallery('casting', this)" class="gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition">Shoutcasting</button>
+                <button onclick="filterGallery('activation', this)" class="gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition">Brand Activations</button>
+            </div>
+        </div>
+
+        <!-- BENTO PHOTO GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <!-- Photo 1 (Your Uploaded stage1 Image) -->
+            <!-- Photo 1 (Your Uploaded Image) -->
+<div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('images/stage1.jpg', 'Arena Stage Hosting - VCT Pacific')">
+    <img src="images/stage1.jpg" alt="Stage Hosting" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+        <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
+        <h3 class="text-lg font-bold">VCT Pacific Arena Stage</h3>
+    </div>
+</div>
+
+            <!-- Photo 2 (Placeholder) -->
+            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800', 'Desk Anchor & Color Casting')">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800" alt="Desk Caster" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-brand-gold font-bold text-xs uppercase">Broadcast Desk</span>
+                    <h3 class="text-lg font-bold">International Color Casting</h3>
+                </div>
+            </div>
+
+            <!-- Photo 3 (Placeholder) -->
+            <div class="gallery-item activation relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800', 'Acer Predator Launch Event')">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="Brand Activation" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-blue-400 font-bold text-xs uppercase">Brand Activation</span>
+                    <h3 class="text-lg font-bold">Predator Hardware Launch</h3>
+                </div>
+            </div>
+
+            <!-- Photo 4 (Placeholder) -->
+            <div class="gallery-item stage relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800', 'Esports World Cup Live Stage')">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800" alt="Live Event Stage" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
+                    <h3 class="text-lg font-bold">Esports World Cup Arena</h3>
+                </div>
+            </div>
+
+            <!-- Photo 5 (Placeholder) -->
+            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800', 'Crossfire APAC Championship Desk')">
+                <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800" alt="Crossfire Casting" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-red-500 font-bold text-xs uppercase">Shoutcasting</span>
+                    <h3 class="text-lg font-bold">Crossfire APAC Championship</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL POPUP -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex-col items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl font-bold hover:text-brand-red transition">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged Work Photo" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl border border-gray-800 object-contain">
+        <p id="lightbox-caption" class="text-gray-300 mt-4 text-center font-bold"></p>
+    </div>
+
     <!-- CONTACT / BOOKING SECTION -->
     <section id="contact" class="py-20 px-6 bg-brand-card border-t border-gray-800">
         <div class="max-w-4xl mx-auto text-center space-y-8">
@@ -180,6 +264,42 @@
     <footer class="py-8 text-center text-xs text-gray-500 border-t border-gray-900">
         <p>© 2026 Justin "Vill" Villaseran. All rights reserved.</p>
     </footer>
+
+    <!-- GALLERY INTERACTION SCRIPTS -->
+    <script>
+        function filterGallery(category, clickedBtn) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.gallery-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-red', 'text-white');
+                btn.classList.add('bg-brand-card', 'text-gray-300');
+            });
+
+            clickedBtn.classList.remove('bg-brand-card', 'text-gray-300');
+            clickedBtn.classList.add('bg-brand-red', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').innerText = caption;
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.getElementById('lightbox').classList.add('flex');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.getElementById('lightbox').classList.remove('flex');
+        }
+    </script>
 
 </body>
 </html>
