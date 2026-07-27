@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin "Vill" Villaseran | International Esports Host & Shoutcaster</title>
-    <meta name="description" content="Official talent portfolio of Justin 'Vill' Villaseran. Best Esports Stage Host of the Year (2025) & Best Color Caster (2023), VCT Masters, EWC, and FPS Shoutcaster.">
+    <meta name="description" content="Official talent portfolio of Justin 'Vill' Villaseran. Best Esports Stage Host of the Year (2025) & Best Color Caster (2023), Valorant Champions, EWC, and FPS Shoutcaster.">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,9 +15,12 @@
                     colors: {
                         brand: {
                             red: '#FF4655',
-                            dark: '#0F1923',
-                            card: '#1F2937',
-                            gold: '#F59E0B'
+                            gold: '#D97706',
+                            bg: '#F8FAFC',
+                            surface: '#FFFFFF',
+                            border: '#E2E8F0',
+                            text: '#0F172A',
+                            muted: '#64748B'
                         }
                     }
                 }
@@ -27,6 +30,21 @@
 
     <!-- FontAwesome Icons (v6.5.1) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Style for Geometric Lines Pattern (Matching FB Cover) -->
+    <style>
+        .bg-geometric-lines {
+            background-color: #F8FAFC;
+            background-image: 
+                linear-gradient(135deg, rgba(15, 23, 42, 0.03) 25%, transparent 25%), 
+                linear-gradient(225deg, rgba(15, 23, 42, 0.03) 25%, transparent 25%), 
+                linear-gradient(45deg, rgba(15, 23, 42, 0.03) 25%, transparent 25%), 
+                linear-gradient(315deg, rgba(15, 23, 42, 0.03) 25%, #F8FAFC 25%);
+            background-position: 40px 0, 40px 0, 0 0, 0 0;
+            background-size: 80px 80px;
+            background-repeat: repeat;
+        }
+    </style>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -59,13 +77,18 @@
     }
     </script>
 </head>
-<body class="bg-brand-dark text-white font-sans antialiased">
+<body class="bg-geometric-lines text-brand-text font-sans antialiased selection:bg-brand-red selection:text-white">
 
     <!-- NAVIGATION -->
-    <nav class="fixed top-0 w-full bg-brand-dark/90 backdrop-blur border-b border-gray-800 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black tracking-wider text-brand-red">VILL<span class="text-white">.ESPORTS</span></a>
-            <div class="hidden md:flex space-x-8 font-medium">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-brand-border/80 z-50 shadow-xs">
+        <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo in Nav Bar -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="logo.png" alt="VILL Logo" class="h-8 w-auto object-contain">
+                <span class="text-xl font-black tracking-wider text-slate-900 hidden sm:inline">VILL<span class="text-brand-red">.ESPORTS</span></span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 font-semibold text-sm text-brand-muted">
                 <a href="#about" class="hover:text-brand-red transition">About</a>
                 <a href="#credentials" class="hover:text-brand-red transition">Achievements</a>
                 <a href="#highlights" class="hover:text-brand-red transition">Showreel</a>
@@ -73,57 +96,60 @@
                 <a href="javascript:void(0)" onclick="openEventsModal()" class="hover:text-brand-red transition">Events Archive</a>
                 <a href="#contact" class="hover:text-brand-red transition">Booking</a>
             </div>
-            <a href="#contact" class="bg-brand-red hover:bg-red-600 px-5 py-2 rounded-lg font-bold text-sm transition">Book Talent</a>
+            <a href="#contact" class="bg-brand-red hover:bg-red-600 text-white px-5 py-2 rounded-lg font-bold text-sm transition shadow-sm hover:shadow-md">Book Talent</a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
     <section class="pt-36 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2 space-y-6">
+            <!-- Logo Featured Above Awards / Name -->
+            <img src="logo.png" alt="VILL Logo" class="h-14 w-auto object-contain">
+
             <div class="flex flex-row items-center gap-3">
-                <div class="flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/40 text-brand-gold px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider shadow-sm">
-                    <i class="fa-solid fa-trophy"></i>
+                <div class="flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-700 px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-xs">
+                    <i class="fa-solid fa-trophy text-brand-gold"></i>
                     <span>Best Esports Stage Host ('25)</span>
                 </div>
-                <div class="flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/40 text-brand-gold px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider shadow-sm">
-                    <i class="fa-solid fa-microphone"></i>
+                <div class="flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-700 px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider shadow-xs backdrop-blur-xs">
+                    <i class="fa-solid fa-microphone text-brand-gold"></i>
                     <span>Best Color Caster ('23)</span>
                 </div>
             </div>
 
-            <h1 class="text-5xl md:text-6xl font-black leading-tight tracking-tight">
+            <h1 class="text-5xl md:text-6xl font-black leading-tight tracking-tight text-slate-900">
                 JUSTIN <span class="text-brand-red">"VILL"</span> VILLASERAN
             </h1>
-            <p class="text-xl text-gray-300 font-light">
+            <p class="text-lg text-brand-muted font-normal leading-relaxed">
                 International Esports Host, Broadcast Desk Anchor, and Multi-Awarded FPS Shoutcaster. Veteran voice across VALORANT Champions Tour, Predator League, and numerous Esports Titles.
             </p>
             <div class="flex flex-wrap gap-4 pt-2">
-                <a href="#highlights" class="bg-brand-red hover:bg-red-600 px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition">
+                <a href="#highlights" class="bg-brand-red hover:bg-red-600 text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 transition shadow-md hover:shadow-lg">
                     <i class="fa-solid fa-play"></i> Watch Reel
                 </a>
-                <a href="#contact" class="border border-gray-700 hover:border-brand-red px-6 py-3 rounded-lg font-bold transition">
+                <a href="#contact" class="bg-white/80 border border-brand-border hover:border-brand-red text-brand-text px-6 py-3 rounded-xl font-bold transition shadow-xs backdrop-blur-xs">
                     Get in Touch
                 </a>
             </div>
         </div>
 
         <div class="md:w-1/2 w-full">
-            <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-brand-card flex items-center justify-center">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/t8U57opSTLo" title="Justin Villaseran Reel" allowfullscreen></iframe>
+            <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-brand-border bg-white flex items-center justify-center p-1">
+                <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/t8U57opSTLo" title="Justin Villaseran Reel" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
     <!-- CREDENTIALS SECTION -->
-    <section id="credentials" class="bg-black/40 py-12 border-y border-gray-800">
+    <section id="credentials" class="bg-white/80 backdrop-blur-md py-12 border-y border-brand-border shadow-xs">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-8">Casted & Hosted S-Tier Global Broadcasts</p>
-            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-lg font-black tracking-wider text-gray-300 uppercase">
+            <p class="text-xs font-bold uppercase tracking-widest text-brand-muted mb-8">Casted & Hosted S-Tier Global Broadcasts</p>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-lg font-black tracking-wider text-slate-800 uppercase">
                 <span class="whitespace-nowrap hover:text-brand-red transition">VALORANT CHAMPIONS TOUR</span>
                 <span class="whitespace-nowrap hover:text-brand-gold transition">ESPORTS WORLD CUP</span>
-                <span class="whitespace-nowrap hover:text-red-500 transition">CROSSFIRE APAC</span>
-                <span class="whitespace-nowrap hover:text-blue-400 transition">PREDATOR LEAGUE</span>
-                <span class="whitespace-nowrap hover:text-yellow-400 transition">UAAP ESPORTS</span>
+                <span class="whitespace-nowrap hover:text-red-600 transition">CROSSFIRE APAC</span>
+                <span class="whitespace-nowrap hover:text-blue-600 transition">PREDATOR LEAGUE</span>
+                <span class="whitespace-nowrap hover:text-amber-600 transition">UAAP ESPORTS</span>
             </div>
         </div>
     </section>
@@ -132,126 +158,134 @@
     <section id="highlights" class="py-20 px-6 max-w-6xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-black mb-3">BROADCAST & STAGE SHOWCASE</h2>
-            <p class="text-gray-400">High-energy stage hypes, tactical commentary, and brand activations.</p>
+            <p class="text-brand-muted">High-energy stage hypes, tactical commentary, and brand activations.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800 p-6">
-                <div class="text-brand-red font-bold text-xs uppercase mb-2">Color Casting</div>
-                <h3 class="text-xl font-bold mb-2">VALORANT International</h3>
-                <p class="text-sm text-gray-400">Award-winning tactical analysis, round breakdown, and clutch commentary for VCT Pacific, Masters, and Champions.</p>
+            <div class="bg-white/90 backdrop-blur-xs rounded-2xl overflow-hidden border border-brand-border p-6 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition duration-300">
+                <div class="text-brand-red font-bold text-xs uppercase mb-2 tracking-wider">Color Casting</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">VALORANT International</h3>
+                <p class="text-sm text-brand-muted leading-relaxed">Award-winning tactical analysis, round breakdown, and clutch commentary for VCT Pacific, Masters, and Champions.</p>
             </div>
-            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800 p-6">
-                <div class="text-brand-red font-bold text-xs uppercase mb-2">Stage Hosting</div>
-                <h3 class="text-xl font-bold mb-2">S-Tier Arena Events</h3>
-                <p class="text-sm text-gray-400">Crowd engagement, winner interviews, and opening ceremony hosting for live stadium tournaments.</p>
+            <div class="bg-white/90 backdrop-blur-xs rounded-2xl overflow-hidden border border-brand-border p-6 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition duration-300">
+                <div class="text-brand-red font-bold text-xs uppercase mb-2 tracking-wider">Stage Hosting</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">S-Tier Arena Events</h3>
+                <p class="text-sm text-brand-muted leading-relaxed">Crowd engagement, winner interviews, and opening ceremony hosting for live stadium tournaments.</p>
             </div>
-            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800 p-6">
-                <div class="text-brand-red font-bold text-xs uppercase mb-2">Tech & Creator</div>
-                <h3 class="text-xl font-bold mb-2">Brand Partnerships</h3>
-                <p class="text-sm text-gray-400">Hardware reviews and product showcases with NVIDIA, PCWORX, Acer Predator, and ASUS ROG.</p>
+            <div class="bg-white/90 backdrop-blur-xs rounded-2xl overflow-hidden border border-brand-border p-6 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition duration-300">
+                <div class="text-brand-red font-bold text-xs uppercase mb-2 tracking-wider">Tech & Creator</div>
+                <h3 class="text-xl font-bold mb-2 text-slate-900">Brand Partnerships</h3>
+                <p class="text-sm text-brand-muted leading-relaxed">Hardware reviews and product showcases with NVIDIA, PCWORX, Acer Predator, and ASUS ROG.</p>
             </div>
         </div>
     </section>
 
     <!-- ACTION GALLERY SECTION -->
-    <section id="gallery" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-800">
+    <section id="gallery" class="py-20 px-6 max-w-6xl mx-auto border-t border-brand-border">
         <div class="text-center mb-12">
             <h2 class="text-4xl font-black mb-3">ACTION GALLERY</h2>
-            <p class="text-gray-400">On stage, behind the desk, and live on S-Tier broadcasts.</p>
+            <p class="text-brand-muted">On stage, behind the desk, and live on S-Tier broadcasts.</p>
 
             <div class="flex flex-wrap justify-center gap-3 mt-8">
-                <button onclick="filterGallery('all', this)" class="gallery-btn bg-brand-red text-white px-5 py-2 rounded-lg font-bold text-sm transition">All</button>
-                <button onclick="filterGallery('stage', this)" class="gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition">Stage Hosting</button>
-                <button onclick="filterGallery('casting', this)" class="gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition">Shoutcasting</button>
-                <button onclick="filterGallery('activation', this)" class="gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition">Brand Activations</button>
+                <button onclick="filterGallery('all', this)" class="gallery-btn bg-brand-red text-white px-5 py-2 rounded-xl font-bold text-sm transition shadow-sm">All</button>
+                <button onclick="filterGallery('stage', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Stage Hosting</button>
+                <button onclick="filterGallery('casting', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Shoutcasting</button>
+                <button onclick="filterGallery('activation', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Brand Activations</button>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
+            <div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
                 <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="Stage Hosting" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
-                    <h3 class="text-lg font-bold">VCT Pacific Arena Stage</h3>
+                    <h3 class="text-lg font-bold text-white">VCT Pacific Arena Stage</h3>
                 </div>
             </div>
 
-            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
+            <div class="gallery-item casting relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
                 <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800" alt="Desk Caster" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <span class="text-brand-gold font-bold text-xs uppercase">Broadcast Desk</span>
-                    <h3 class="text-lg font-bold">International Color Casting</h3>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-amber-400 font-bold text-xs uppercase">Broadcast Desk</span>
+                    <h3 class="text-lg font-bold text-white">International Color Casting</h3>
                 </div>
             </div>
 
-            <div class="gallery-item activation relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
+            <div class="gallery-item activation relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
                 <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="Brand Activation" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-blue-400 font-bold text-xs uppercase">Brand Activation</span>
-                    <h3 class="text-lg font-bold">Predator Hardware Launch</h3>
+                    <h3 class="text-lg font-bold text-white">Predator Hardware Launch</h3>
                 </div>
             </div>
 
-            <div class="gallery-item stage relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
+            <div class="gallery-item stage relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
                 <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800" alt="Live Event Stage" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
-                    <h3 class="text-lg font-bold">Esports World Cup Arena</h3>
+                    <h3 class="text-lg font-bold text-white">Esports World Cup Arena</h3>
                 </div>
             </div>
 
-            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
+            <div class="gallery-item casting relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
                 <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800" alt="Crossfire Casting" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-red-500 font-bold text-xs uppercase">Shoutcasting</span>
-                    <h3 class="text-lg font-bold">Crossfire APAC Championship</h3>
+                    <h3 class="text-lg font-bold text-white">Crossfire APAC Championship</h3>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CAREER ARCHIVE SECTION -->
-    <section id="events" class="py-16 px-6 max-w-5xl mx-auto border-t border-gray-800 text-center">
+    <section id="events" class="py-16 px-6 max-w-5xl mx-auto border-t border-brand-border text-center">
         <h2 class="text-3xl font-black mb-2 tracking-tight">CAREER ARCHIVE</h2>
-        <p class="text-gray-400 text-sm max-w-xl mx-auto mb-8">15+ years of live broadcasts, S-Tier stage hosting, and multi-game tournaments across 320+ fully logged events.</p>
+        <p class="text-brand-muted text-sm max-w-xl mx-auto mb-8">15+ years of live broadcasts, S-Tier stage hosting, and multi-game tournaments across 320+ fully logged events.</p>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-8 p-4 bg-brand-card/50 rounded-xl border border-gray-800/80 text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-8 p-6 bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border text-center shadow-md">
             <div>
-                <div class="text-2xl font-black text-brand-red">320+</div>
-                <div class="text-xs text-gray-400 font-medium">Logged Broadcasts</div>
+                <div class="text-3xl font-black text-brand-red">320+</div>
+                <div class="text-xs text-brand-muted font-semibold mt-1">Logged Broadcasts</div>
             </div>
             <div>
-                <div class="text-2xl font-black text-brand-gold">15+</div>
-                <div class="text-xs text-gray-400 font-medium">Years Active</div>
+                <div class="text-3xl font-black text-brand-gold">15+</div>
+                <div class="text-xs text-brand-muted font-semibold mt-1">Years Active</div>
             </div>
             <div>
-                <div class="text-2xl font-black text-blue-400">50+</div>
-                <div class="text-xs text-gray-400 font-medium">S-Tier Venues</div>
+                <div class="text-3xl font-black text-blue-600">200+</div>
+                <div class="text-xs text-brand-muted font-semibold mt-1">Unique Venues</div>
             </div>
             <div>
-                <div class="text-2xl font-black text-white">20+</div>
-                <div class="text-xs text-gray-400 font-medium">Game Titles</div>
+                <div class="text-3xl font-black text-slate-900">30+</div>
+                <div class="text-xs text-brand-muted font-semibold mt-1">Game Titles</div>
             </div>
         </div>
 
-        <button onclick="openEventsModal()" class="inline-flex items-center gap-3 bg-brand-card hover:bg-gray-800 border border-gray-700 hover:border-brand-red text-white font-bold px-8 py-3.5 rounded-xl transition duration-300 shadow-lg group">
+        <button onclick="openEventsModal()" class="inline-flex items-center gap-3 bg-white hover:bg-gray-50 border border-brand-border hover:border-brand-red text-brand-text font-bold px-8 py-3.5 rounded-xl transition duration-300 shadow-sm hover:shadow-md group">
             <i class="fa-solid fa-list-check text-brand-red group-hover:scale-110 transition"></i>
             <span>Browse Full Event History (2011–2026)</span>
-            <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:translate-x-1 transition"></i>
+            <i class="fa-solid fa-arrow-right text-xs text-brand-muted group-hover:translate-x-1 transition"></i>
         </button>
     </section>
 
     <!-- CONTACT / BOOKING SECTION -->
-    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto border-t border-gray-800 text-center">
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto border-t border-brand-border text-center">
+        <!-- Logo Anchor Sign-off -->
+        <div class="flex justify-center mb-6">
+            <img src="logo.png" alt="VILL Logo" class="h-16 w-auto object-contain">
+        </div>
+
         <h2 class="text-4xl font-black mb-4">BOOK TALENT & INQUIRIES</h2>
-        <p class="text-gray-400 mb-8 max-w-xl mx-auto">Available for stage hosting, broadcast casting, panel desk hosting, and brand influencer collaborations worldwide.</p>
+        <p class="text-brand-muted mb-8 max-w-xl mx-auto">Available for stage hosting, broadcast casting, panel desk hosting, and brand influencer collaborations worldwide.</p>
         
-        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-            <a href="mailto:villsanity@gmail.com" class="bg-brand-red hover:bg-red-600 px-8 py-4 rounded-xl font-bold text-lg transition flex items-center gap-3 shadow-lg">
+        <div class="flex flex-col items-center justify-center gap-6">
+            <!-- Centered Email Button -->
+            <a href="mailto:villsanity@gmail.com" class="bg-brand-red hover:bg-red-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center gap-3 shadow-md hover:shadow-lg">
                 <i class="fa-solid fa-envelope"></i> villsanity@gmail.com
             </a>
-            <div class="flex items-center gap-4 text-2xl text-gray-400">
+
+            <!-- Centered Social Icons Below Email -->
+            <div class="flex items-center justify-center gap-6 text-2xl text-brand-muted">
                 <a href="https://www.facebook.com/villsanityy/" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://x.com/VillSanityy" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.instagram.com/villsanityyy/" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-instagram"></i></a>
@@ -261,33 +295,33 @@
     </section>
 
     <!-- EVENT HISTORY MODAL -->
-    <div id="events-modal" class="fixed inset-0 bg-black/95 z-50 hidden flex flex-col justify-center items-center p-4 md:p-8 backdrop-blur-md">
-        <div class="bg-brand-dark border border-gray-800 w-full max-w-4xl max-h-[85vh] rounded-2xl flex flex-col overflow-hidden shadow-2xl relative">
+    <div id="events-modal" class="fixed inset-0 bg-slate-950/60 z-50 hidden flex flex-col justify-center items-center p-4 md:p-8 backdrop-blur-xs">
+        <div class="bg-white border border-brand-border w-full max-w-4xl max-h-[85vh] rounded-2xl flex flex-col overflow-hidden shadow-2xl relative">
             
-            <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-brand-card/40">
+            <div class="p-6 border-b border-brand-border flex justify-between items-center bg-gray-50">
                 <div>
-                    <h3 class="text-2xl font-black tracking-tight text-white">CAREER EVENT DATABASE</h3>
-                    <p class="text-xs text-gray-400 mt-1">Filter events by era or role type below.</p>
+                    <h3 class="text-2xl font-black tracking-tight text-brand-text">CAREER EVENT DATABASE</h3>
+                    <p class="text-xs text-brand-muted mt-1">Filter events by era or role type below.</p>
                 </div>
-                <button onclick="closeEventsModal()" class="text-gray-400 hover:text-brand-red text-2xl font-bold p-2 transition">&times;</button>
+                <button onclick="closeEventsModal()" class="text-brand-muted hover:text-brand-red text-2xl font-bold p-2 transition">&times;</button>
             </div>
 
-            <div class="p-4 border-b border-gray-800/80 bg-black/20 space-y-3">
+            <div class="p-4 border-b border-brand-border bg-gray-50/50 space-y-3">
                 <div class="flex flex-wrap justify-center gap-2">
-                    <span class="text-xs text-gray-500 font-bold uppercase self-center mr-2">Era:</span>
-                    <button onclick="filterEra('all', this)" class="era-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition">All</button>
-                    <button onclick="filterEra('2024-2026', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2024–2026</button>
-                    <button onclick="filterEra('2020-2023', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2020–2023</button>
-                    <button onclick="filterEra('2015-2019', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2015–2019</button>
-                    <button onclick="filterEra('2011-2014', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2011–2014</button>
+                    <span class="text-xs text-brand-muted font-bold uppercase self-center mr-2">Era:</span>
+                    <button onclick="filterEra('all', this)" class="era-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition shadow-xs">All</button>
+                    <button onclick="filterEra('2024-2026', this)" class="era-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-md font-bold text-xs transition">2024–2026</button>
+                    <button onclick="filterEra('2020-2023', this)" class="era-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-md font-bold text-xs transition">2020–2023</button>
+                    <button onclick="filterEra('2015-2019', this)" class="era-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-md font-bold text-xs transition">2015–2019</button>
+                    <button onclick="filterEra('2011-2014', this)" class="era-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-md font-bold text-xs transition">2011–2014</button>
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-2 pt-1 border-t border-gray-800/50">
-                    <span class="text-xs text-gray-500 font-bold uppercase self-center mr-2">Role:</span>
-                    <button onclick="filterRole('all', this)" class="role-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition">All Roles</button>
-                    <button onclick="filterRole('role-host', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Hosting</button>
-                    <button onclick="filterRole('role-caster', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Casting</button>
-                    <button onclick="filterRole('role-influencer', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Creator / Influencer</button>
+                <div class="flex flex-wrap justify-center gap-2 pt-1 border-t border-brand-border">
+                    <span class="text-xs text-brand-muted font-bold uppercase self-center mr-2">Role:</span>
+                    <button onclick="filterRole('all', this)" class="role-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition shadow-xs">All Roles</button>
+                    <button onclick="filterRole('role-host', this)" class="role-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-md font-bold text-xs transition">Hosting</button>
+                    <button onclick="filterRole('role-caster', this)" class="role-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-md font-bold text-xs transition">Casting</button>
+                    <button onclick="filterRole('role-influencer', this)" class="role-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-md font-bold text-xs transition">Creator / Influencer</button>
                 </div>
             </div>
 
@@ -660,28 +694,28 @@
             });
 
             if (filtered.length === 0) {
-                container.innerHTML = `<div class="text-center text-gray-500 py-8">No events match the selected filters.</div>`;
+                container.innerHTML = `<div class="text-center text-brand-muted py-8">No events match the selected filters.</div>`;
                 return;
             }
 
             filtered.forEach(item => {
                 const badgeHtml = item.roleNames.map(r => {
-                    let color = 'bg-brand-red/10 text-brand-red border-brand-red/30';
-                    if (r.toLowerCase().includes('cast') || r.toLowerCase().includes('panelist')) color = 'bg-brand-gold/10 text-brand-gold border-brand-gold/30';
-                    if (r.toLowerCase().includes('influencer') || r.toLowerCase().includes('kol') || r.toLowerCase().includes('talent')) color = 'bg-purple-500/10 text-purple-400 border-purple-500/30';
+                    let color = 'bg-red-500/10 text-brand-red border-red-500/30';
+                    if (r.toLowerCase().includes('cast') || r.toLowerCase().includes('panelist')) color = 'bg-amber-500/10 text-amber-700 border-amber-500/30';
+                    if (r.toLowerCase().includes('influencer') || r.toLowerCase().includes('kol') || r.toLowerCase().includes('talent')) color = 'bg-purple-500/10 text-purple-700 border-purple-500/30';
                     return `<span class="text-xs ${color} border px-2.5 py-1 rounded font-medium">${r}</span>`;
                 }).join(' ');
 
                 const element = document.createElement('div');
-                element.className = `era-item bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3`;
+                element.className = `era-item bg-white/90 hover:bg-white p-4 rounded-xl border border-brand-border transition flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-xs hover:shadow-md`;
                 element.innerHTML = `
                     <div class="space-y-1">
                         <div class="flex items-center gap-2">
                             <span class="text-xs font-mono text-brand-red font-bold">${item.year}</span>
-                            <span class="text-xs text-gray-500">•</span>
-                            <span class="text-xs font-semibold text-gray-300">${item.location}</span>
+                            <span class="text-xs text-brand-muted/40">•</span>
+                            <span class="text-xs font-semibold text-brand-muted">${item.location}</span>
                         </div>
-                        <h4 class="font-bold text-base text-white">${item.title}</h4>
+                        <h4 class="font-bold text-base text-brand-text">${item.title}</h4>
                     </div>
                     <div class="flex flex-wrap items-center gap-2">${badgeHtml}</div>
                 `;
@@ -692,26 +726,26 @@
         function filterEra(era, btn) {
             selectedEra = era;
             document.querySelectorAll('.era-btn').forEach(b => {
-                b.className = 'era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition';
+                b.className = 'era-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-xl font-bold text-xs transition';
             });
-            btn.className = 'era-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition';
+            btn.className = 'era-btn bg-brand-red text-white px-3.5 py-1 rounded-xl font-bold text-xs transition shadow-xs';
             renderEvents();
         }
 
         function filterRole(role, btn) {
             selectedRole = role;
             document.querySelectorAll('.role-btn').forEach(b => {
-                b.className = 'role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition';
+                b.className = 'role-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-3.5 py-1 rounded-xl font-bold text-xs transition';
             });
-            btn.className = 'role-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition';
+            btn.className = 'role-btn bg-brand-red text-white px-3.5 py-1 rounded-xl font-bold text-xs transition shadow-xs';
             renderEvents();
         }
 
         function filterGallery(type, btn) {
             document.querySelectorAll('.gallery-btn').forEach(b => {
-                b.className = 'gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition';
+                b.className = 'gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs';
             });
-            btn.className = 'gallery-btn bg-brand-red text-white px-5 py-2 rounded-lg font-bold text-sm transition';
+            btn.className = 'gallery-btn bg-brand-red text-white px-5 py-2 rounded-xl font-bold text-sm transition shadow-sm';
 
             document.querySelectorAll('.gallery-item').forEach(item => {
                 if (type === 'all' || item.classList.contains(type)) {
