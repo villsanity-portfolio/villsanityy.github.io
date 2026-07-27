@@ -28,7 +28,7 @@
     <!-- FontAwesome Icons (v6.5.1) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- JSON-LD Structured Data for Search & AI Engines -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -80,7 +80,6 @@
     <!-- HERO SECTION -->
     <section class="pt-36 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2 space-y-6">
-            <!-- HORIZONTAL RECTANGULAR AWARDS BADGES -->
             <div class="flex flex-row items-center gap-3">
                 <div class="flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/40 text-brand-gold px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider shadow-sm">
                     <i class="fa-solid fa-trophy"></i>
@@ -96,7 +95,7 @@
                 JUSTIN <span class="text-brand-red">"VILL"</span> VILLASERAN
             </h1>
             <p class="text-xl text-gray-300 font-light">
-                International Esports Host, Broadcast Desk Anchor, and Multi-Awarded FPS Shoutcaster. Veteran voice across VALORANT Champions Tour, Predator League and numerous Esports Titles.
+                International Esports Host, Broadcast Desk Anchor, and Multi-Awarded FPS Shoutcaster. Veteran voice across VALORANT Champions Tour, Predator League, and numerous Esports Titles.
             </p>
             <div class="flex flex-wrap gap-4 pt-2">
                 <a href="#highlights" class="bg-brand-red hover:bg-red-600 px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition">
@@ -108,7 +107,6 @@
             </div>
         </div>
 
-        <!-- HERO MEDIA / EMBEDDED REEL -->
         <div class="md:w-1/2 w-full">
             <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-brand-card flex items-center justify-center">
                 <iframe class="w-full h-full" src="https://www.youtube.com/embed/t8U57opSTLo" title="Justin Villaseran Reel" allowfullscreen></iframe>
@@ -116,11 +114,10 @@
         </div>
     </section>
 
-    <!-- CLEAN STATIC TEXT NAMES SECTION (NO WRAPPING) -->
+    <!-- CREDENTIALS SECTION -->
     <section id="credentials" class="bg-black/40 py-12 border-y border-gray-800">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-8">Casted & Hosted S-Tier Global Broadcasts</p>
-            
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-lg font-black tracking-wider text-gray-300 uppercase">
                 <span class="whitespace-nowrap hover:text-brand-red transition">VALORANT CHAMPIONS TOUR</span>
                 <span class="whitespace-nowrap hover:text-brand-gold transition">ESPORTS WORLD CUP</span>
@@ -139,39 +136,30 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800">
-                <div class="p-6">
-                    <div class="text-brand-red font-bold text-xs uppercase mb-2">Color Casting</div>
-                    <h3 class="text-xl font-bold mb-2">VALORANT International</h3>
-                    <p class="text-sm text-gray-400">Award-winning tactical analysis, round breakdown, and clutch commentary for VCT Pacific, Masters, and Champions.</p>
-                </div>
+            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800 p-6">
+                <div class="text-brand-red font-bold text-xs uppercase mb-2">Color Casting</div>
+                <h3 class="text-xl font-bold mb-2">VALORANT International</h3>
+                <p class="text-sm text-gray-400">Award-winning tactical analysis, round breakdown, and clutch commentary for VCT Pacific, Masters, and Champions.</p>
             </div>
-
-            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800">
-                <div class="p-6">
-                    <div class="text-brand-red font-bold text-xs uppercase mb-2">Stage Hosting</div>
-                    <h3 class="text-xl font-bold mb-2">S-Tier Arena Events</h3>
-                    <p class="text-sm text-gray-400">Crowd engagement, winner interviews, and opening ceremony hosting for live stadium tournaments.</p>
-                </div>
+            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800 p-6">
+                <div class="text-brand-red font-bold text-xs uppercase mb-2">Stage Hosting</div>
+                <h3 class="text-xl font-bold mb-2">S-Tier Arena Events</h3>
+                <p class="text-sm text-gray-400">Crowd engagement, winner interviews, and opening ceremony hosting for live stadium tournaments.</p>
             </div>
-
-            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800">
-                <div class="p-6">
-                    <div class="text-brand-red font-bold text-xs uppercase mb-2">Tech & Creator</div>
-                    <h3 class="text-xl font-bold mb-2">Brand Partnerships</h3>
-                    <p class="text-sm text-gray-400">Hardware reviews and product showcases with NVIDIA, PCWORX, Acer Predator, and ASUS ROG.</p>
-                </div>
+            <div class="bg-brand-card rounded-xl overflow-hidden border border-gray-800 p-6">
+                <div class="text-brand-red font-bold text-xs uppercase mb-2">Tech & Creator</div>
+                <h3 class="text-xl font-bold mb-2">Brand Partnerships</h3>
+                <p class="text-sm text-gray-400">Hardware reviews and product showcases with NVIDIA, PCWORX, Acer Predator, and ASUS ROG.</p>
             </div>
         </div>
     </section>
 
-    <!-- BENTO ACTION GALLERY SECTION -->
+    <!-- ACTION GALLERY SECTION -->
     <section id="gallery" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-800">
         <div class="text-center mb-12">
             <h2 class="text-4xl font-black mb-3">ACTION GALLERY</h2>
             <p class="text-gray-400">On stage, behind the desk, and live on S-Tier broadcasts.</p>
 
-            <!-- FILTER BUTTONS -->
             <div class="flex flex-wrap justify-center gap-3 mt-8">
                 <button onclick="filterGallery('all', this)" class="gallery-btn bg-brand-red text-white px-5 py-2 rounded-lg font-bold text-sm transition">All</button>
                 <button onclick="filterGallery('stage', this)" class="gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition">Stage Hosting</button>
@@ -180,20 +168,16 @@
             </div>
         </div>
 
-        <!-- BENTO PHOTO GRID -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            
-            <!-- Photo 1 (Your Uploaded stage1 Image) -->
-            <div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('images/stage1.jpg', 'Arena Stage Hosting - VCT Pacific')">
-                <img src="images/stage1.jpg" alt="Stage Hosting" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
+            <div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="Stage Hosting" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
                     <h3 class="text-lg font-bold">VCT Pacific Arena Stage</h3>
                 </div>
             </div>
 
-            <!-- Photo 2 (Placeholder) -->
-            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800', 'Desk Anchor & Color Casting')">
+            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
                 <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800" alt="Desk Caster" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-brand-gold font-bold text-xs uppercase">Broadcast Desk</span>
@@ -201,8 +185,7 @@
                 </div>
             </div>
 
-            <!-- Photo 3 (Placeholder) -->
-            <div class="gallery-item activation relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800', 'Acer Predator Launch Event')">
+            <div class="gallery-item activation relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
                 <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="Brand Activation" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-blue-400 font-bold text-xs uppercase">Brand Activation</span>
@@ -210,8 +193,7 @@
                 </div>
             </div>
 
-            <!-- Photo 4 (Placeholder) -->
-            <div class="gallery-item stage relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800', 'Esports World Cup Live Stage')">
+            <div class="gallery-item stage relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
                 <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800" alt="Live Event Stage" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
@@ -219,28 +201,25 @@
                 </div>
             </div>
 
-            <!-- Photo 5 (Placeholder) -->
-            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800', 'Crossfire APAC Championship Desk')">
+            <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer">
                 <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800" alt="Crossfire Casting" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                     <span class="text-red-500 font-bold text-xs uppercase">Shoutcasting</span>
                     <h3 class="text-lg font-bold">Crossfire APAC Championship</h3>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- CAREER ARCHIVE SECTION (LOW-KEY MAIN PAGE LINK) -->
+    <!-- CAREER ARCHIVE SECTION -->
     <section id="events" class="py-16 px-6 max-w-5xl mx-auto border-t border-gray-800 text-center">
         <h2 class="text-3xl font-black mb-2 tracking-tight">CAREER ARCHIVE</h2>
-        <p class="text-gray-400 text-sm max-w-xl mx-auto mb-8">15+ years of live broadcasts, S-Tier stage hosting, and multi-game tournaments across 330+ events.</p>
+        <p class="text-gray-400 text-sm max-w-xl mx-auto mb-8">15+ years of live broadcasts, S-Tier stage hosting, and multi-game tournaments across 320+ fully logged events.</p>
 
-        <!-- MINIMAL STATS STRIP -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-8 p-4 bg-brand-card/50 rounded-xl border border-gray-800/80 text-center">
             <div>
-                <div class="text-2xl font-black text-brand-red">330+</div>
-                <div class="text-xs text-gray-400 font-medium">Broadcasts</div>
+                <div class="text-2xl font-black text-brand-red">320+</div>
+                <div class="text-xs text-gray-400 font-medium">Logged Broadcasts</div>
             </div>
             <div>
                 <div class="text-2xl font-black text-brand-gold">15+</div>
@@ -256,21 +235,35 @@
             </div>
         </div>
 
-        <!-- BUTTON TO OPEN EVENT MODAL TAB -->
         <button onclick="openEventsModal()" class="inline-flex items-center gap-3 bg-brand-card hover:bg-gray-800 border border-gray-700 hover:border-brand-red text-white font-bold px-8 py-3.5 rounded-xl transition duration-300 shadow-lg group">
             <i class="fa-solid fa-list-check text-brand-red group-hover:scale-110 transition"></i>
-            <span>Browse Event History (2011–2026)</span>
+            <span>Browse Full Event History (2011–2026)</span>
             <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:translate-x-1 transition"></i>
         </button>
     </section>
 
-    <!-- FULL EVENT HISTORY MODAL TAB WITH ERA & ROLE FILTERS -->
-    <div id="events-modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col justify-center items-center p-4 md:p-8 backdrop-blur-md">
+    <!-- CONTACT / BOOKING SECTION -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto border-t border-gray-800 text-center">
+        <h2 class="text-4xl font-black mb-4">BOOK TALENT & INQUIRIES</h2>
+        <p class="text-gray-400 mb-8 max-w-xl mx-auto">Available for stage hosting, broadcast casting, panel desk hosting, and brand influencer collaborations worldwide.</p>
         
-        <!-- MODAL CONTAINER -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <a href="mailto:villsanity@gmail.com" class="bg-brand-red hover:bg-red-600 px-8 py-4 rounded-xl font-bold text-lg transition flex items-center gap-3 shadow-lg">
+                <i class="fa-solid fa-envelope"></i> villsanity@gmail.com
+            </a>
+            <div class="flex items-center gap-4 text-2xl text-gray-400">
+                <a href="https://www.facebook.com/villsanityy/" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/VillSanityy" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/villsanityyy/" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@villsanityy" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT HISTORY MODAL -->
+    <div id="events-modal" class="fixed inset-0 bg-black/95 z-50 hidden flex flex-col justify-center items-center p-4 md:p-8 backdrop-blur-md">
         <div class="bg-brand-dark border border-gray-800 w-full max-w-4xl max-h-[85vh] rounded-2xl flex flex-col overflow-hidden shadow-2xl relative">
             
-            <!-- MODAL HEADER -->
             <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-brand-card/40">
                 <div>
                     <h3 class="text-2xl font-black tracking-tight text-white">CAREER EVENT DATABASE</h3>
@@ -279,10 +272,7 @@
                 <button onclick="closeEventsModal()" class="text-gray-400 hover:text-brand-red text-2xl font-bold p-2 transition">&times;</button>
             </div>
 
-            <!-- FILTER BARS (ERA & ROLE) -->
             <div class="p-4 border-b border-gray-800/80 bg-black/20 space-y-3">
-                
-                <!-- ERA FILTERS -->
                 <div class="flex flex-wrap justify-center gap-2">
                     <span class="text-xs text-gray-500 font-bold uppercase self-center mr-2">Era:</span>
                     <button onclick="filterEra('all', this)" class="era-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition">All</button>
@@ -292,7 +282,6 @@
                     <button onclick="filterEra('2011-2014', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2011–2014</button>
                 </div>
 
-                <!-- ROLE FILTERS -->
                 <div class="flex flex-wrap justify-center gap-2 pt-1 border-t border-gray-800/50">
                     <span class="text-xs text-gray-500 font-bold uppercase self-center mr-2">Role:</span>
                     <button onclick="filterRole('all', this)" class="role-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition">All Roles</button>
@@ -300,162 +289,432 @@
                     <button onclick="filterRole('role-caster', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Casting</button>
                     <button onclick="filterRole('role-influencer', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Creator / Influencer</button>
                 </div>
-
             </div>
 
-            <!-- MODAL SCROLLABLE EVENT LIST -->
-            <div class="p-6 overflow-y-auto space-y-3 flex-1 custom-scrollbar">
-
-                <!-- EVENT ITEM 1 (HOST) -->
-                <div class="era-item role-host 2024-2026 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
-                    <div class="space-y-1">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-mono text-brand-red font-bold">2025–2026</span>
-                            <span class="text-xs text-gray-500">•</span>
-                            <span class="text-xs font-semibold text-gray-300">VALORANT</span>
-                        </div>
-                        <h4 class="font-bold text-base text-white">VALORANT Champions Tour (VCT) Pacific</h4>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs bg-brand-red/10 text-brand-red border border-brand-red/30 px-2.5 py-1 rounded font-medium">Stage Host</span>
-                        <span class="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 px-2.5 py-1 rounded font-medium">Desk Anchor</span>
-                    </div>
-                </div>
-
-                <!-- EVENT ITEM 2 (CASTER) -->
-                <div class="era-item role-caster 2024-2026 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
-                    <div class="space-y-1">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-mono text-brand-gold font-bold">2024</span>
-                            <span class="text-xs text-gray-500">•</span>
-                            <span class="text-xs font-semibold text-gray-300">FPS Titles</span>
-                        </div>
-                        <h4 class="font-bold text-base text-white">Esports World Cup (EWC) — Riyadh</h4>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 px-2.5 py-1 rounded font-medium">Color Caster</span>
-                    </div>
-                </div>
-
-                <!-- EVENT ITEM 3 (INFLUENCER / CREATOR) -->
-                <div class="era-item role-influencer 2024-2026 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
-                    <div class="space-y-1">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-mono text-purple-400 font-bold">2024</span>
-                            <span class="text-xs text-gray-500">•</span>
-                            <span class="text-xs font-semibold text-gray-300">Hardware & Tech</span>
-                        </div>
-                        <h4 class="font-bold text-base text-white">ASUS ROG & Predator Hardware Launch Keynote</h4>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs bg-purple-500/10 text-purple-400 border border-purple-500/30 px-2.5 py-1 rounded font-medium">Brand Creator</span>
-                    </div>
-                </div>
-
-                <!-- EVENT ITEM 4 (HOST) -->
-                <div class="era-item role-host 2020-2023 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
-                    <div class="space-y-1">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-mono text-blue-400 font-bold">2023</span>
-                            <span class="text-xs text-gray-500">•</span>
-                            <span class="text-xs font-semibold text-gray-300">VALORANT / PUBG</span>
-                        </div>
-                        <h4 class="font-bold text-base text-white">APAC Predator League Grand Finals</h4>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs bg-blue-500/10 text-blue-400 border border-blue-500/30 px-2.5 py-1 rounded font-medium">Arena Host</span>
-                    </div>
-                </div>
-
-                <!-- EVENT ITEM 5 (CASTER) -->
-                <div class="era-item role-caster 2015-2019 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
-                    <div class="space-y-1">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-mono text-red-400 font-bold">2018</span>
-                            <span class="text-xs text-gray-500">•</span>
-                            <span class="text-xs font-semibold text-gray-300">Crossfire</span>
-                        </div>
-                        <h4 class="font-bold text-base text-white">Crossfire APAC Championship</h4>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs bg-red-500/10 text-red-400 border border-red-500/30 px-2.5 py-1 rounded font-medium">Shoutcaster</span>
-                    </div>
-                </div>
-
-                <!-- EVENT ITEM 6 (HOST) -->
-                <div class="era-item role-host 2011-2014 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
-                    <div class="space-y-1">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-mono text-gray-400 font-bold">2011–2014</span>
-                            <span class="text-xs text-gray-500">•</span>
-                            <span class="text-xs font-semibold text-gray-300">Multiple Titles</span>
-                        </div>
-                        <h4 class="font-bold text-base text-white">National & Regional Grassroots Tournaments</h4>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs bg-gray-500/10 text-gray-300 border border-gray-600/30 px-2.5 py-1 rounded font-medium">Tournament Host</span>
-                    </div>
-                </div>
-
-            </div>
+            <div id="event-list-container" class="p-6 overflow-y-auto space-y-3 flex-1 custom-scrollbar"></div>
         </div>
     </div>
 
-    <!-- LIGHTBOX MODAL POPUP -->
-    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex-col items-center justify-center p-4">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl font-bold hover:text-brand-red transition">&times;</button>
-        <img id="lightbox-img" src="" alt="Enlarged Work Photo" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl border border-gray-800 object-contain">
-        <p id="lightbox-caption" class="text-gray-300 mt-4 text-center font-bold"></p>
-    </div>
-
-    <!-- CONTACT / BOOKING SECTION -->
-    <section id="contact" class="py-20 px-6 bg-brand-card border-t border-gray-800">
-        <div class="max-w-4xl mx-auto text-center space-y-8">
-            <h2 class="text-4xl font-black">WORK WITH VILL</h2>
-            <p class="text-gray-300 text-lg">Available for international tournament color casting, desk hosting, brand activations, and commercial voice work.</p>
-            
-            <div class="flex flex-col md:flex-row justify-center items-center gap-6 pt-4">
-                <a href="mailto:villsanity@gmail.com" class="bg-brand-red hover:bg-red-600 px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-3 transition">
-                    <i class="fa-solid fa-envelope"></i> Send Booking Inquiry
-                </a>
-            </div>
-
-            <!-- SOCIAL MEDIA LINKS -->
-            <div class="flex justify-center gap-6 pt-8 text-2xl text-gray-400">
-                <a href="https://www.facebook.com/villsanityy/" target="_blank" class="hover:text-brand-red transition" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://x.com/VillSanityy" target="_blank" class="hover:text-brand-red transition" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/villsanityyy/" target="_blank" class="hover:text-brand-red transition" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@villsanityy" target="_blank" class="hover:text-brand-red transition" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="py-8 text-center text-xs text-gray-500 border-t border-gray-900">
-        <p>© 2026 Justin "Vill" Villaseran. All rights reserved.</p>
-    </footer>
-
-    <!-- INTERACTION SCRIPTS -->
+    <!-- SCRIPT FOR COMPLETE EVENT DATA & INTERACTION -->
     <script>
-        // GLOBAL FILTER STATES
-        let currentEra = 'all';
-        let currentRole = 'all';
+        const eventsData = [
+            // 2026
+            { era: '2024-2026', year: '2026', title: 'APAC Predator League', location: 'New Delhi, India', roles: ['role-influencer'], roleNames: ['KOL / Influencer'] },
+            { era: '2024-2026', year: '2026', title: 'VCT Philippines Split 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2026', title: 'VCT SEA Split 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2026', title: 'Crossfire Legends SEA Championships', location: 'Crossfire', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'Valorant AR1S Event', location: 'VALORANT', roles: ['role-host', 'role-caster'], roleNames: ['Stage Host', 'Caster'] },
+            { era: '2024-2026', year: '2026', title: 'Teamfight Tactics Knights Trial Tournament', location: 'Teamfight Tactics', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'Lupon Civil War', location: 'Naos Esports Arena', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'Valorant Re//Miks Party', location: 'TNC Highgrounds', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'Valorant PC Takeover', location: 'KDM Manila', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'Good Game Con', location: 'Sequoia Hotel', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2026', title: 'VCT Philippines Stage 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2026', title: 'VCT Game Changers Stage 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2026', title: 'PCWORX Tekken Tournament', location: 'General Santos City', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'One Ayala Hobby Hub Launch', location: 'One Ayala', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'VCT Pacific Stage 1 Finals', location: 'Ho Chi Minh, Vietnam', roles: ['role-influencer'], roleNames: ['Influencer'] },
+            { era: '2024-2026', year: '2026', title: 'VCT SEA Split 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2026', title: 'Valorant Game Changers Stage 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2026', title: 'PCWORX Tekken 8 Tournament', location: 'Tekken 8', roles: ['role-influencer'], roleNames: ['KOL / Influencer'] },
+            { era: '2024-2026', year: '2026', title: 'Razer Gold x Visa Promo Campaign', location: 'Brand Showcase', roles: ['role-influencer'], roleNames: ['KOL / Influencer'] },
+            { era: '2024-2026', year: '2026', title: 'Valorant Creator Brawl', location: 'NAOS Esports Arena', roles: ['role-host', 'role-caster'], roleNames: ['Stage Host', 'Caster'] },
+            { era: '2024-2026', year: '2026', title: 'Valorant Black Rose Tournament', location: 'NAOS Esports Arena', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2026', title: 'PUBGM Path of the Ninja', location: 'Dogzilla Studio', roles: ['role-host'], roleNames: ['Stage Host'] },
 
-        // GALLERY FILTER
-        function filterGallery(category, clickedBtn) {
-            const items = document.querySelectorAll('.gallery-item');
-            const buttons = document.querySelectorAll('.gallery-btn');
+            // 2025
+            { era: '2024-2026', year: '2025', title: 'APAC Predator League', location: 'Kuala Lumpur, Malaysia', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2025', title: 'VCT Pacific Kickoff', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Click na Click si TOL (MLBB & CODM)', location: 'Dasmarinas Arena', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Ilocos Sur Festival 2025 Esports', location: 'Vigan Convention Center', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Guanzon Festival 2025', location: 'Guanzon Pangasinan', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'UAAP Esports — VALORANT', location: 'Collegiate Esports', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Foodpanda Panda Legends Tour', location: 'Baguio, Bacolod, Davao, Manila', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'VCT Masters Bangkok', location: 'Bangkok, Thailand', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2025', title: 'Asia Champions League (Crossfire)', location: 'Shanghai, China', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Crossfire Preview Show', location: 'Crossfire', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant 5 Year Anniversary Event', location: 'Riot Games', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2025', title: 'VALORANT Masters Toronto', location: 'Toronto, Canada', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Teamfight Tactics Set 14 Launch', location: 'Teamfight Tactics', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2025', title: 'VCT Pacific Stage 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'League of Legends Liga Republika', location: 'League of Legends', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Splash X Showmatch', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Esports World Cup (EWC) 2025', location: 'Riyadh, Saudi Arabia', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2025', title: 'VCT Pacific Finals', location: 'Tokyo, Japan', roles: ['role-host', 'role-influencer'], roleNames: ['Stage Host', 'KOL'] },
+            { era: '2024-2026', year: '2025', title: 'VALORANT Champions Paris', location: 'Paris, France', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Game Changers Pacific', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'WCG Creator Rumble', location: 'World Cyber Games', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'League of Legends: Wild Rift Anniversary', location: 'Wild Rift', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Veto Showmatch', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Casters vs. Cosplayer Showmatch', location: 'VALORANT', roles: ['role-influencer'], roleNames: ['Influencer'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Newbloods Showmatch', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant University Showmatch', location: 'Collegiate Esports', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant PC Cafe Invitational', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Wild Rift "Wild at Five" Anniversary', location: 'RR Studio', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'WCG Creator Rumble', location: 'MET Live Pasay', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'League of Legends Worlds 2025 Viewing Party', location: 'Samsung Hall', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Predator League PH Grand Finals', location: 'SM North EDSA', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Game Changers Championships', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2025', title: 'Crossfire Legends', location: 'One Ayala', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'KTS CS2 Tournament', location: 'KDM Lagro', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Charity Showmatch', location: 'NAOS Esports Arena', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2025', title: 'Valorant Paskuhan Year End Party', location: 'Nhiu Creatives', roles: ['role-host'], roleNames: ['Stage Host'] },
 
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-brand-red', 'text-white');
-                btn.classList.add('bg-brand-card', 'text-gray-300');
+            // 2024
+            { era: '2024-2026', year: '2024', title: 'SM Cyberzone Gamefest', location: 'SM Megamall', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'VCT Challengers PH Split 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'VCT Masters Madrid', location: 'Madrid, Spain', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Farlight PH Championships Season 2', location: 'Shooting Gallery', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Paravox Game Launch', location: 'Paravox', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'SM Cyberzone Gamefest — Baguio', location: 'SM Baguio', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Crossfire Stars APAC — Fall', location: 'Crossfire', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Crossfire Stars Invitationals', location: 'Crossfire', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'VCT Pacific Split 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'VCT Masters Shanghai', location: 'Shanghai, China', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Realme CODM Showmatch', location: 'realme', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'WCG Philippines Challenge 2024', location: 'World Cyber Games', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'PCWORX x Nvidia Showcase', location: 'Hardware Showcase', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'VALORANT SB19 vs Team Payaman Showmatch', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'VCT Pacific Split 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'VCT Philippines Stage 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Wild Rift Glam Slam Tournament Finals', location: 'Baked Studios', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Blacklist Rivalry Rally', location: 'SM Aura Samsung Hall', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'PCWORX x Nvidia Payday Showcase', location: 'Hardware Showcase', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'POCO x PUBGM: Gamers Night', location: 'Sari Sari', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Crossfire PH Masters Finals', location: 'Highgrounds QC', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Blacklist International MLBB Meet & Greet', location: 'Tier One HQ', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Philippine Game Dev Expo', location: 'SMX Convention Center', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'VALORANT UAAP Esports', location: 'Arete, Ateneo', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Crossfire Stars Summer Championship', location: 'Crossfire', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Valorant Champions "Tara Valo" Watch Party', location: 'Riot Games', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2024', title: 'Acer Predator Global Product Launch', location: 'Acer Predator', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2024', title: 'Gamer Grounds Load 4 Gold 3', location: 'Gamer Grounds', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2024', title: 'OPPO A3 Launch', location: 'OPPO', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2024-2026', year: '2024', title: 'Crossfire Stars APAC Series — Fall', location: 'Crossfire', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'The International 2024 Watch Party', location: 'Highgrounds QC', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Wild Rift — Wild Rounds Grand Finals', location: 'Wild Rift', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'League of Legends Liga Republika Grand Finals', location: 'Estancia', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Cabal: Infinite Combo Exclusive Party', location: 'House Manila', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'The Nationals NBA 2K24 Philippine Championship', location: 'SM Makati', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Worlds 2024 PH Watch Party', location: 'Samsung Hall', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Cyberzone Event — SM Cebu', location: 'SM Cebu', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Arcane Season 2 Watch Party', location: 'RR Stronghold', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Magucup Season 2 Powered By Sunlife', location: 'CPMP Studios', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2024-2026', year: '2024', title: 'Howlers Festival 3.0', location: 'CCP Open Grounds', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Arcane Unleashed Panel', location: 'RR Studio', roles: ['role-host', 'role-influencer'], roleNames: ['Panelist / Host'] },
+            { era: '2024-2026', year: '2024', title: 'Basket Pinas Season 3', location: 'Basketball', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2024-2026', year: '2024', title: 'Valorant Pasko Event', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+
+            // 2023
+            { era: '2020-2023', year: '2023', title: 'Valorant Challengers Philippines - Split 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'VCT Pacific Launch', location: 'VCT Pacific', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'VCT Lock//In Sao Paulo', location: 'Sao Paulo, Brazil', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'MineskiTV Playground', location: 'MineskiTV', roles: ['role-influencer'], roleNames: ['Streamer'] },
+            { era: '2020-2023', year: '2023', title: 'Team Secret Watch Party', location: 'Team Secret', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'Valorant Pacific League', location: 'VCT Pacific', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'SIBOL Watch Party', location: 'SIBOL', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'VCT Pacific Podcast', location: 'VCT Pacific', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2023', title: 'Synology NAS Tech Review', location: 'Synology', roles: ['role-influencer'], roleNames: ['Tech Reviewer'] },
+            { era: '2020-2023', year: '2023', title: 'NVIDIA x PCWORX Feature', location: 'NVIDIA x PCWORX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'Valorant Challengers Philippines - Split 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'Globe x CONQuest', location: 'Globe', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2020-2023', year: '2023', title: 'VCT PH Split 2 LAN Playoffs', location: 'CONQuest SMX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'VCT Masters Tokyo', location: 'Tokyo, Japan', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'Riot Games | Valorant Podcast', location: 'Riot Games', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2023', title: 'VCT Ascension Thailand', location: 'Thailand', roles: ['role-caster'], roleNames: ['Caster / Analyst'] },
+            { era: '2020-2023', year: '2023', title: 'NVIDIA X PCWORX Payday Showcase', location: 'NVIDIA x PCWORX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'Razer Gold Video Feature', location: 'Razer Gold', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2020-2023', year: '2023', title: 'World Cyber Games Rivals 3 Reality Show', location: 'Vigan, Philippines', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2023', title: 'World Cyber Games Rivals 3 Grand Finals', location: 'MLBB', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'MLBB KOL Brawl', location: 'SM MOA Music Hall', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'PUBGM World Invitational', location: 'Riyadh, Saudi Arabia [Gamers8]', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'VCT Pacific Last Chance Qualifier', location: 'VCT Pacific', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'Cobra Energy Drink #TeamLakas Feature', location: 'Cobra Energy Drink', roles: ['role-influencer'], roleNames: ['Brand Ambassador'] },
+            { era: '2020-2023', year: '2023', title: 'Valorant Champions Los Angeles', location: 'Los Angeles, USA', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'Realme Regional Wars - Pampanga', location: 'Clark, Pampanga', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'Realme Regional Wars - Davao', location: 'Davao City', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'Realme Regional Wars - Cebu', location: 'Cebu City', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'NVIDIA Geforce RTX 40 Series Review', location: 'NVIDIA', roles: ['role-influencer'], roleNames: ['Tech Reviewer'] },
+            { era: '2020-2023', year: '2023', title: 'Farlight 84 PH Championships Season 1', location: 'Shooting Gallery Studios', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'Moonleaf Tea Shop Promo Campaign', location: 'Moonleaf Tea Shop', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2020-2023', year: '2023', title: 'Globe Gamer Grounds Showcase', location: 'Globe Gamer Grounds', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2020-2023', year: '2023', title: 'Daplays with Damods Video Series', location: 'Riot Games PH', roles: ['role-influencer'], roleNames: ['Creator'] },
+            { era: '2020-2023', year: '2023', title: 'KFC x PUBGM Collaboration Launch', location: 'PUBGM', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'ESGS 2023 Main Stage Host', location: 'World Trade Center', roles: ['role-host'], roleNames: ['Main Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'LoL Worlds Watch Party', location: 'Kia Frontier Theater', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'APAC Predator League Launch', location: 'Whitespace Manila', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'APAC Predator League PH Finals', location: 'SM North EDSA', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2023', title: 'Valorant Game Changers Finals', location: 'Sao Paulo, Brazil', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2023', title: 'Viewsonic Philippines Monitor Review', location: 'Viewsonic', roles: ['role-influencer'], roleNames: ['Tech Reviewer'] },
+
+            // 2022
+            { era: '2020-2023', year: '2022', title: 'Garena Freefire Challengers Philippines', location: 'Garena Free Fire', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant Challengers Philippines Stage 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant Challengers APAC', location: 'VALORANT APAC', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'YEP Talks — Guest Speaker', location: 'Holy Cross of Davao Univ.', roles: ['role-influencer'], roleNames: ['Guest Speaker'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant Masters 1 Reykjavik', location: 'Reykjavik, Iceland', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'NVIDIA x PCWORX Showcase 1', location: 'NVIDIA x PCWORX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant Challengers Philippines Stage 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'Lupon WxC Stockholm Major Watch Party', location: 'Lupon WxC', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'NVIDIA x PCWORX Showcase 2', location: 'NVIDIA x PCWORX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant Challengers APAC Stage 2', location: 'VALORANT APAC', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'VIVO Summer Supercup PH Finals PUBGM', location: 'VIVO PUBGM', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'MineskiTV Tidbits Podcast', location: 'MineskiTV', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2022', title: 'Mountain Dew Discord Tropa Takeover', location: 'Mountain Dew', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2022', title: 'PUBG Ladder Arena', location: 'PUBG', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant Masters 2 Copenhagen', location: 'Copenhagen, Denmark', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'NVIDIA x PCWORX Showcase 3', location: 'NVIDIA x PCWORX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant APAC LCQ — 1Up Studios', location: 'Jakarta, Indonesia', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'Garena Masters 3 for CODM', location: 'Marriott Hotel Manila', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Glorietta Game Fest 2022', location: 'Glorietta Activity Center', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Valorant Champions Istanbul', location: 'Istanbul, Turkey', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'Predator League Philippine Grand Finals', location: 'SM Mall of Asia', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Globe G Battle Zone Radiant Cup (Valorant)', location: 'SM Mall of Asia', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'Riot Games Stage — ESGS', location: 'ESGS SMX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'JBL Radianite Cup for Valorant', location: 'ESGS SMX', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'ESL Clash of Nations for Valorant', location: 'ESL VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'GG Truck x COD Warzone 2.0 — Eastwood', location: 'Eastwood', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'GG Truck x COD Warzone 2.0 — Eton Centris', location: 'Eton Centris', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Mineski VxV Valorant Grand Finals', location: 'Ayala Circuit Makati', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2022', title: 'NVIDIA x PCWORX Showcase 4', location: 'NVIDIA x PCWORX', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Seagate x Synology Showcase', location: 'Seagate x Synology', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Intel 12th & 13th Gen Showcase', location: 'Intel', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2022', title: 'Intel NUC Showcase', location: 'Intel', roles: ['role-host'], roleNames: ['Stage Host'] },
+
+            // 2021
+            { era: '2020-2023', year: '2021', title: 'Palit x Nvidia COD:MW Exhibition', location: 'Palit x Nvidia', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Challengers Tour Stage 1', location: 'Mineski Studio', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Oppo #GameOn Launch', location: 'Mineski Studio', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Philips Monitors Brand Ambassador Showcase', location: 'Philips Monitors', roles: ['role-influencer'], roleNames: ['Brand Ambassador'] },
+            { era: '2020-2023', year: '2021', title: 'Oasis Arena for Apex Legends', location: 'Apex Legends', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Masters 1', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'PCWORX x Nvidia GeForce Week', location: 'PCWORX x NVIDIA', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Challengers Tour Stage 2', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Asia Pacific Predator League Finals (PUBG)', location: 'PUBG APAC', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'YEP Tambayan Weekly Cup for CODM', location: 'CODM', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Fulcrum Esports Valorant League — Guest', location: 'Fulcrum Esports', roles: ['role-influencer'], roleNames: ['Guest Analyst'] },
+            { era: '2020-2023', year: '2021', title: 'The Nationals Season 3 for Tekken 7', location: 'The Nationals', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Challengers Tour Stage 3', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Garena Freefire Philippines Open', location: 'Garena Free Fire', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Philips Community Shield for Valorant', location: 'Philips', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Oppo Game Fest', location: 'Lyka Games', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Intel Gamers Day', location: 'PCWORX Studio', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Challengers SEA Playoffs', location: 'VALORANT SEA', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Garena Freefire MCP Major', location: 'Garena Free Fire', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Masters Berlin', location: 'Berlin, Germany', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Paymaya Playmaya League CODM', location: 'Paymaya', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Last Chance Qualifier APAC Region', location: 'VALORANT APAC', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Garena Freefire MCP Major Season 2 Finals', location: 'Garena Free Fire', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Mineski VxV - Valorant', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Mineski Masters for DotA 2', location: 'DotA 2', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2021', title: 'Valorant Champions Berlin PH Broadcast', location: 'Berlin / PH Broadcast', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'PUBG Global Championships', location: 'PUBG Global', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2021', title: 'Go Philippines Esports Himagsikan - Valorant', location: 'Go Philippines', roles: ['role-caster'], roleNames: ['Color Caster'] },
+
+            // 2020
+            { era: '2020-2023', year: '2020', title: 'The Nationals MLBB Season 1 Finale', location: 'The Nationals', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2020', title: 'Smart Siklab Saya — SM Megamall', location: 'SM Megamall', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2020', title: 'Smart Siklab Saya — SM Skydome', location: 'SM Skydome', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2020', title: 'Garena Call of Duty Mobile PH Championship', location: 'Gariath Concepts Studio', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'Philippine Pro Gaming League', location: 'ROS & CODM', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'PUBG Continental Series 1 for APAC', location: 'Spwnpoint Studios', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'Predator Philippine PUBG Series 1', location: 'Spwnpoint Studios', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'PUBG Continental Series 2 for APAC', location: 'Spwnpoint Studios', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'PUBGM Philippine National Championships', location: 'Mineski Studio', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'The Nationals Season 2 for Tekken 7', location: 'Tekken 7', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2020', title: 'TM Funlaro Regional Esports Tournament', location: 'CODM', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'Top Clans 2020 for ROS', location: 'Rules of Survival', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'The Nationals Season 2 for DotA 2', location: 'DotA 2', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2020', title: 'Global Loot League — APAC Qualifiers PUBG', location: 'PUBG APAC', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'Predator Philippine PUBG Series 2', location: 'Spwnpoint Studios', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'PUBG Continental Series 3 for APAC', location: 'Spwnpoint Studios', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'Road to Supergamer Fest 2020 PVP Regional', location: 'PVP Regional', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2020', title: 'MSI Laptops Product Launching', location: 'MSI Laptops', roles: ['role-host'], roleNames: ['Stage Host'] },
+            { era: '2020-2023', year: '2020', title: 'ESGS CODM / PUBG Mobile Open', location: 'ESGS', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'The Nationals Season 2 for MLBB', location: 'MLBB', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2020', title: 'Beyond The Meta Podcast', location: 'Podcast', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2020-2023', year: '2020', title: 'Garena Call of Duty Mobile MSP Majors', location: 'Garena CODM', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'PPGL Call of Duty Mobile / PUBGM Grand Finals', location: 'PPGL', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'Viewsonic Monitors Showcase', location: 'Viewsonic', roles: ['role-influencer'], roleNames: ['KOL'] },
+            { era: '2020-2023', year: '2020', title: 'PVP Esports Open Championships for Valorant', location: 'VALORANT', roles: ['role-caster'], roleNames: ['Color Caster'] },
+            { era: '2020-2023', year: '2020', title: 'Playpark XP — Bren Studios', location: 'Bren Studios', roles: ['role-host'], roleNames: ['Stage Host'] },
+
+            // 2019
+            { era: '2015-2019', year: '2019', title: 'The Nationals, - DOTA 2 Conference 1', location: 'The Nationals', roles: ['role-host'], roleNames: ['Courtside Reporter'] },
+            { era: '2015-2019', year: '2019', title: 'The Lions Den', location: 'Brentertainment Studio', roles: ['role-host'], roleNames: ['Guest Host'] },
+            { era: '2015-2019', year: '2019', title: 'PUBGLITE Showdown, Philippines', location: 'Gameon Studio', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'World Travel Lifestyle Expo - 2019', location: 'Manila', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM SantaRosa Laguna', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'The Nationals, - DOTA 2 Conference 2', location: 'The Nationals', roles: ['role-host'], roleNames: ['Courtside Reporter'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Batangas', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Lucena', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Pinoy Otaku Festival', location: 'Robinsons Novaliches', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'PUBG Lite Showdown APAC', location: 'Gameon Studio', roles: ['role-host', 'role-caster'], roleNames: ['Host / Cast'] },
+            { era: '2015-2019', year: '2019', title: 'BIEGAME Launch', location: 'Gariath Studio', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Playpark Cabal 11th year Anniversary', location: 'SM Skydome', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'The Nationals - Mobile Legends: Bang Bang', location: 'The Nationals', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'TNC Cup- Rules of Survival', location: 'TNC Arena', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Legazpi', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Naga', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'The Nationals, MLBB Finals Conference 1', location: 'Eastwood Central Plaza', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Trece Martires', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'The Nationals, Tekken 7', location: 'The Nationals', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Batangas', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Bacoor', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'Sm City Dasmarinas', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Molino', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Esports Collegiate League', location: 'FEU Institute of Technology', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Santa Rosa', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'PlayPark All-Stars', location: 'Glorietta 2 Activity Center', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Supreme Esports Brawl 2.0', location: 'SM City Lemery', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'WESG CSGO', location: 'Highgrounds, QC', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2019', title: 'Cavite Esports League', location: 'Imus, Cavite', roles: ['role-host', 'role-caster'], roleNames: ['Cast / Host'] },
+            { era: '2015-2019', year: '2019', title: 'Dell / Alienware Media Launch', location: 'Green Sun Hotel', roles: ['role-influencer'], roleNames: ['Influencer'] },
+            { era: '2015-2019', year: '2019', title: 'ESGS 2019', location: 'SMX Convention Center', roles: ['role-influencer'], roleNames: ['Talent'] },
+            { era: '2015-2019', year: '2019', title: 'Streamers Thanksgiving Party', location: 'GameOver PH', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'ROS Top Clans Arena 2019', location: 'Le Pavillon, Pasay City', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'LGD.Int Launch Party', location: 'Conrad Hotel', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Smart Siklab Saya for Mobile Legends', location: 'SM Mall Of Asia', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: '30th Philippines Southeast Asian Games', location: 'Filoil Flying V Arena', roles: ['role-host'], roleNames: ['Observer'] },
+            { era: '2015-2019', year: '2019', title: 'Cavite Esports League', location: 'Imus Sports Complex', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Playpark XP', location: 'Ynares Sports Arena', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2019', title: 'Playpark XP', location: 'Davao City', roles: ['role-host'], roleNames: ['Host'] },
+
+            // 2018
+            { era: '2015-2019', year: '2018', title: 'Philippine Pro Gaming League', location: 'Cagayan De Oro', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Philippine Pro Gaming League', location: 'Makati', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Omen by HP National Finals', location: 'Music Hall, MOA', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Philippine Pro Gaming League', location: 'Glorietta 1', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Mobile Legends Bang Bang Philippine League English Broadcast', location: 'English Broadcast', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2018', title: 'Pinoy Otaku Festival 2018', location: 'Fairview Terraces', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Dragon Saga Game Launch', location: 'Coreon Gate Metrowalk', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'ASUS ROG PUBG Philippine National Finals', location: 'SM Skydome', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Playpark Cabal 10 Years Anniversary', location: 'SM Skydome', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Mobile Legends: Bang Bang Professional League Grand Finals', location: 'MOA', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Philippine Pro Gaming League Season 2 (League of Legends)', location: 'Ayala Cloverleaf', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Playpark Allstars 2018', location: 'SM Skydome', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'ESPN 5 Sports Center for Esports', location: 'TV5 Studio', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2018', title: 'Globe Philippine Pro Gaming League Season 3', location: 'Glorietta 2', roles: ['role-host'], roleNames: ['Host'] },
+
+            // 2017
+            { era: '2015-2019', year: '2017', title: 'Supermicro Super 0 Gaming Motherboard Product Launching', location: 'Crown Plaza, Ortigas', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2017', title: 'The Manila Masters', location: 'MOA Arena', roles: ['role-host'], roleNames: ['Host / Panelist'] },
+            { era: '2015-2019', year: '2017', title: 'ASUS ROG Masters 2017- CSGO', location: 'Manila', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2017', title: 'Smart Mobile Gaming League for Mobile Legends', location: 'Cebu, Pampanga, Manila', roles: ['role-host', 'role-caster'], roleNames: ['Cast / Host'] },
+            { era: '2015-2019', year: '2017', title: 'Playpark Allstars Finals 2017', location: 'SM Skydome', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2017', title: 'Playpark Allstars Finals 2017 for Special Force 1 and 2', location: 'SM Skydome', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2017', title: 'Globe Mobile Legends Southeast Asia Cup', location: 'Glorietta, Manila', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2017', title: 'PGF Summer Assembly', location: 'Trinoma', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2017', title: 'The International 2017 Philippine Pubstomp', location: 'Club Nix.05', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2017', title: 'ASUS ROG Philippine Masters 2017 for CSGO', location: 'SM North', roles: ['role-host'], roleNames: ['Panel Host'] },
+            { era: '2015-2019', year: '2017', title: 'HP Omen Mindanao Regional Finals', location: 'Mindanao', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2017', title: 'ASUS ROG Masters 2017 APAC Regional Finals', location: 'SMX Convention Center', roles: ['role-caster'], roleNames: ['Caster / Analyst'] },
+            { era: '2015-2019', year: '2017', title: 'The Face Off By Huawei Mobile', location: 'BGC, Taguig', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2017', title: 'HP Omen Metro Manila Regional Finals', location: 'Trinoma', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2017', title: 'Playpark XP', location: 'SM Skydome', roles: ['role-host'], roleNames: ['Host'] },
+
+            // 2016
+            { era: '2015-2019', year: '2016', title: 'Halo 5 World Championship Regional Qualifiers', location: 'Online', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2016', title: 'Halo 5 World Championship Regional Finals', location: 'Hongkong', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2016', title: 'Mineski CSGO Shootout', location: 'Manila', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2016', title: 'Playpark All Stars 2016', location: 'Xsplit Studios', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2016', title: 'Mineski Pro Gaming League Season 8 - CSGO', location: 'Manila', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2016', title: 'ESL Overwatch Community Cup', location: 'Online', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2016', title: 'Crisis Action Mobile Tournament', location: 'Taiwan', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2016', title: 'Playpark Allstars Finals 2016', location: 'SM Skydome', roles: ['role-host', 'role-caster'], roleNames: ['Host / Cast'] },
+            { era: '2015-2019', year: '2016', title: 'Overwatch Masters Gaming Arena 2016 Championships', location: 'Manila', roles: ['role-host', 'role-caster'], roleNames: ['Host / Cast'] },
+            { era: '2015-2019', year: '2016', title: 'ESGS MSI CSGO Tournament', location: 'MSI Booth', roles: ['role-caster'], roleNames: ['Cast'] },
+
+            // 2015
+            { era: '2015-2019', year: '2015', title: 'Plapypark Fest 2015', location: 'SM North', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2015', title: 'The International 2015 Pubstomp', location: 'Area 05, Morato', roles: ['role-host'], roleNames: ['Host'] },
+            { era: '2015-2019', year: '2015', title: 'Playpark xTreme Party', location: 'Ynares Sports Center', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2015', title: 'ESGS 2015 for Crossfire', location: 'SMX', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2015', title: 'CrossFire Stars', location: 'SM Skydome', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2015-2019', year: '2015', title: 'PAOwer League', location: 'La Union', roles: ['role-host', 'role-caster'], roleNames: ['Host / Cast'] },
+
+            // 2011–2014
+            { era: '2011-2014', year: '2014', title: 'MPGL VI Panelist', location: 'ESGS SMX', roles: ['role-host'], roleNames: ['Panelist'] },
+            { era: '2011-2014', year: '2014', title: 'ESGS for Assault Fire', location: 'SMX', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2014', title: 'Wargodz Expo for CrossFire', location: 'SM Megamall', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2014', title: 'TNC Finale for Assault Fire', location: 'SM North', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2013', title: 'PGF Summer Assembly 2013 for StarCraft 2', location: 'SM North', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2013', title: 'PGF 2013 for StarCraft 2', location: 'World Trade Center', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2012', title: 'iESF eSports Festival for Starcraft 2', location: 'SM Cebu', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2012', title: 'PGF 2012 for Starcraft 2', location: 'SM North', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2012', title: 'NCCL School Tour', location: 'SPUQC, CEU', roles: ['role-caster'], roleNames: ['Cast'] },
+            { era: '2011-2014', year: '2011', title: 'PCX Gaming Expo', location: 'SM Masinag, SM Marikina', roles: ['role-host', 'role-caster'], roleNames: ['Host / Cast'] }
+        ];
+
+        let selectedEra = 'all';
+        let selectedRole = 'all';
+
+        function renderEvents() {
+            const container = document.getElementById('event-list-container');
+            container.innerHTML = '';
+
+            const filtered = eventsData.filter(item => {
+                const eraMatch = selectedEra === 'all' || item.era === selectedEra;
+                const roleMatch = selectedRole === 'all' || item.roles.includes(selectedRole);
+                return eraMatch && roleMatch;
             });
 
-            clickedBtn.classList.remove('bg-brand-card', 'text-gray-300');
-            clickedBtn.classList.add('bg-brand-red', 'text-white');
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="text-center text-gray-500 py-8">No events match the selected filters.</div>`;
+                return;
+            }
 
-            items.forEach(item => {
-                if (category === 'all' || item.classList.contains(category)) {
+            filtered.forEach(item => {
+                const badgeHtml = item.roleNames.map(r => {
+                    let color = 'bg-brand-red/10 text-brand-red border-brand-red/30';
+                    if (r.toLowerCase().includes('cast') || r.toLowerCase().includes('panelist')) color = 'bg-brand-gold/10 text-brand-gold border-brand-gold/30';
+                    if (r.toLowerCase().includes('influencer') || r.toLowerCase().includes('kol') || r.toLowerCase().includes('talent')) color = 'bg-purple-500/10 text-purple-400 border-purple-500/30';
+                    return `<span class="text-xs ${color} border px-2.5 py-1 rounded font-medium">${r}</span>`;
+                }).join(' ');
+
+                const element = document.createElement('div');
+                element.className = `era-item bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3`;
+                element.innerHTML = `
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-brand-red font-bold">${item.year}</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-xs font-semibold text-gray-300">${item.location}</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white">${item.title}</h4>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">${badgeHtml}</div>
+                `;
+                container.appendChild(element);
+            });
+        }
+
+        function filterEra(era, btn) {
+            selectedEra = era;
+            document.querySelectorAll('.era-btn').forEach(b => {
+                b.className = 'era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition';
+            });
+            btn.className = 'era-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition';
+            renderEvents();
+        }
+
+        function filterRole(role, btn) {
+            selectedRole = role;
+            document.querySelectorAll('.role-btn').forEach(b => {
+                b.className = 'role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition';
+            });
+            btn.className = 'role-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition';
+            renderEvents();
+        }
+
+        function filterGallery(type, btn) {
+            document.querySelectorAll('.gallery-btn').forEach(b => {
+                b.className = 'gallery-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-5 py-2 rounded-lg font-bold text-sm transition';
+            });
+            btn.className = 'gallery-btn bg-brand-red text-white px-5 py-2 rounded-lg font-bold text-sm transition';
+
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                if (type === 'all' || item.classList.contains(type)) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
@@ -463,78 +722,14 @@
             });
         }
 
-        // ERA FILTER
-        function filterEra(era, clickedBtn) {
-            currentEra = era;
-            const buttons = document.querySelectorAll('.era-btn');
-
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-brand-red', 'text-white');
-                btn.classList.add('bg-brand-card', 'text-gray-300');
-            });
-
-            clickedBtn.classList.remove('bg-brand-card', 'text-gray-300');
-            clickedBtn.classList.add('bg-brand-red', 'text-white');
-
-            applyCombinedFilters();
-        }
-
-        // ROLE FILTER
-        function filterRole(role, clickedBtn) {
-            currentRole = role;
-            const buttons = document.querySelectorAll('.role-btn');
-
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-brand-red', 'text-white');
-                btn.classList.add('bg-brand-card', 'text-gray-300');
-            });
-
-            clickedBtn.classList.remove('bg-brand-card', 'text-gray-300');
-            clickedBtn.classList.add('bg-brand-red', 'text-white');
-
-            applyCombinedFilters();
-        }
-
-        // APPLY DUAL ERA & ROLE FILTERS
-        function applyCombinedFilters() {
-            const items = document.querySelectorAll('.era-item');
-
-            items.forEach(item => {
-                const matchesEra = (currentEra === 'all' || item.classList.contains(currentEra));
-                const matchesRole = (currentRole === 'all' || item.classList.contains(currentRole));
-
-                if (matchesEra && matchesRole) {
-                    item.style.display = 'flex';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        // EVENTS MODAL
         function openEventsModal() {
             document.getElementById('events-modal').classList.remove('hidden');
-            document.getElementById('events-modal').classList.add('flex');
+            renderEvents();
         }
 
         function closeEventsModal() {
             document.getElementById('events-modal').classList.add('hidden');
-            document.getElementById('events-modal').classList.remove('flex');
-        }
-
-        // LIGHTBOX
-        function openLightbox(src, caption) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox-caption').innerText = caption;
-            document.getElementById('lightbox').classList.remove('hidden');
-            document.getElementById('lightbox').classList.add('flex');
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.add('hidden');
-            document.getElementById('lightbox').classList.remove('flex');
         }
     </script>
-
 </body>
 </html>
