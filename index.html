@@ -31,7 +31,7 @@
     <!-- FontAwesome Icons (v6.5.1) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Custom Style for Geometric Lines Pattern (Matching FB Cover) -->
+    <!-- Custom Styles -->
     <style>
         .bg-geometric-lines {
             background-color: #F8FAFC;
@@ -43,6 +43,20 @@
             background-position: 40px 0, 40px 0, 0 0, 0 0;
             background-size: 80px 80px;
             background-repeat: repeat;
+        }
+
+        /* Infinite Rolling Logo Animation */
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-ticker {
+            display: flex;
+            width: max-content;
+            animation: ticker 30s linear infinite;
+        }
+        .animate-ticker:hover {
+            animation-play-state: paused;
         }
     </style>
 
@@ -82,18 +96,14 @@
     <!-- NAVIGATION -->
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-brand-border/80 z-50 shadow-xs">
         <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-            <!-- Clean Standalone Logo in Nav -->
             <a href="#" class="flex items-center">
                 <img src="logo.png" alt="VILL Logo" class="h-9 w-auto object-contain hover:scale-105 transition duration-200">
             </a>
             
             <div class="hidden md:flex space-x-8 font-semibold text-sm text-brand-muted">
                 <a href="#about" class="hover:text-brand-red transition">About</a>
-                <a href="#credentials" class="hover:text-brand-red transition">Achievements</a>
-                <a href="#highlights" class="hover:text-brand-red transition">Showreel</a>
                 <a href="#gallery" class="hover:text-brand-red transition">Gallery</a>
                 <a href="#events" class="hover:text-brand-red transition">Events Archive</a>
-                <a href="#contact" class="hover:text-brand-red transition">Booking</a>
             </div>
             <a href="#contact" class="bg-brand-red hover:bg-red-600 text-white px-5 py-2 rounded-lg font-bold text-sm transition shadow-sm hover:shadow-md">Book Talent</a>
         </div>
@@ -136,16 +146,37 @@
         </div>
     </section>
 
-    <!-- CREDENTIALS SECTION -->
-    <section id="credentials" class="bg-white/80 backdrop-blur-md py-10 border-y border-brand-border shadow-xs">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-xs font-bold uppercase tracking-widest text-brand-muted mb-6">Casted & Hosted S-Tier Global Broadcasts</p>
-            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-lg font-black tracking-wider text-slate-800 uppercase">
-                <span class="whitespace-nowrap hover:text-brand-red transition">VALORANT CHAMPIONS TOUR</span>
-                <span class="whitespace-nowrap hover:text-brand-gold transition">ESPORTS WORLD CUP</span>
-                <span class="whitespace-nowrap hover:text-red-600 transition">CROSSFIRE APAC</span>
-                <span class="whitespace-nowrap hover:text-blue-600 transition">PREDATOR LEAGUE</span>
-                <span class="whitespace-nowrap hover:text-amber-600 transition">UAAP ESPORTS</span>
+    <!-- CREDENTIALS SECTION (10-LOGO INFINITE TICKER) -->
+    <section id="credentials" class="bg-white/80 backdrop-blur-md py-8 border-y border-brand-border overflow-hidden shadow-xs">
+        <p class="text-xs font-bold uppercase tracking-widest text-brand-muted text-center mb-6">
+            Casted & Hosted S-Tier Global Broadcasts
+        </p>
+        
+        <div class="relative w-full overflow-hidden flex [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+            <div class="animate-ticker flex items-center gap-12 md:gap-16 pr-12">
+                <!-- SET 1 -->
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=VCT+PACIFIC" alt="VCT Pacific" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ESPORTS+WORLD+CUP" alt="Esports World Cup" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=CROSSFIRE+APAC" alt="Crossfire APAC" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PREDATOR+LEAGUE" alt="Predator League" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=UAAP+ESPORTS" alt="UAAP Esports" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PUBG+MOBILE" alt="PUBG Mobile" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=WORLD+CYBER+GAMES" alt="WCG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=NVIDIA" alt="NVIDIA" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ASUS+ROG" alt="ASUS ROG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=RAZER+GOLD" alt="Razer Gold" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+
+                <!-- SET 2 (LOOP DUPLICATE) -->
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=VCT+PACIFIC" alt="VCT Pacific" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ESPORTS+WORLD+CUP" alt="Esports World Cup" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=CROSSFIRE+APAC" alt="Crossfire APAC" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PREDATOR+LEAGUE" alt="Predator League" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=UAAP+ESPORTS" alt="UAAP Esports" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PUBG+MOBILE" alt="PUBG Mobile" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=WORLD+CYBER+GAMES" alt="WCG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=NVIDIA" alt="NVIDIA" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ASUS+ROG" alt="ASUS ROG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=RAZER+GOLD" alt="Razer Gold" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
             </div>
         </div>
     </section>
@@ -233,7 +264,7 @@
         </div>
     </section>
 
-    <!-- CAREER ARCHIVE SECTION (RESTORED ON FRONT PAGE) -->
+    <!-- CAREER ARCHIVE SECTION -->
     <section id="events" class="py-16 px-6 max-w-5xl mx-auto border-t border-brand-border text-center">
         <h2 class="text-3xl font-black mb-2 tracking-tight">CAREER ARCHIVE</h2>
         <p class="text-brand-muted text-sm max-w-xl mx-auto mb-8">15+ years of live broadcasts, S-Tier stage hosting, and multi-game tournaments across 320+ fully logged events.</p>
@@ -266,7 +297,6 @@
 
     <!-- CONTACT / BOOKING SECTION -->
     <section id="contact" class="py-20 px-6 max-w-4xl mx-auto border-t border-brand-border text-center">
-        <!-- Logo Anchor Sign-off -->
         <div class="flex justify-center mb-6">
             <img src="logo.png" alt="VILL Logo" class="h-16 w-auto object-contain">
         </div>
@@ -275,12 +305,10 @@
         <p class="text-brand-muted mb-8 max-w-xl mx-auto">Available for stage hosting, broadcast casting, panel desk hosting, and brand influencer collaborations worldwide.</p>
         
         <div class="flex flex-col items-center justify-center gap-6">
-            <!-- Centered Email Button -->
             <a href="mailto:villsanity@gmail.com" class="bg-brand-red hover:bg-red-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center gap-3 shadow-md hover:shadow-lg">
                 <i class="fa-solid fa-envelope"></i> villsanity@gmail.com
             </a>
 
-            <!-- Centered Social Icons Below Email -->
             <div class="flex items-center justify-center gap-6 text-2xl text-brand-muted">
                 <a href="https://www.facebook.com/villsanityy/" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://x.com/VillSanityy" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-x-twitter"></i></a>
