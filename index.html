@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +33,12 @@
 
     <!-- Custom Styles -->
     <style>
+        /* Smooth scrolling with header offset */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* Ensures fixed nav doesn't overlap section headings */
+        }
+
         .bg-geometric-lines {
             background-color: #F8FAFC;
             background-image: 
