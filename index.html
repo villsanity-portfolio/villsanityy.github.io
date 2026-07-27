@@ -70,6 +70,7 @@
                 <a href="#credentials" class="hover:text-brand-red transition">Achievements</a>
                 <a href="#highlights" class="hover:text-brand-red transition">Showreel</a>
                 <a href="#gallery" class="hover:text-brand-red transition">Gallery</a>
+                <a href="javascript:void(0)" onclick="openEventsModal()" class="hover:text-brand-red transition">Events Archive</a>
                 <a href="#contact" class="hover:text-brand-red transition">Booking</a>
             </div>
             <a href="#contact" class="bg-brand-red hover:bg-red-600 px-5 py-2 rounded-lg font-bold text-sm transition">Book Talent</a>
@@ -95,7 +96,7 @@
                 JUSTIN <span class="text-brand-red">"VILL"</span> VILLASERAN
             </h1>
             <p class="text-xl text-gray-300 font-light">
-                International Esports Host, Broadcast Desk Anchor, and Multi-Awarded FPS Shoutcaster. Veteran voice across VALORANT Champions Tour, Esports World Cup, and Predator League.
+                International Esports Host, Broadcast Desk Anchor, and Multi-Awarded FPS Shoutcaster. Veteran voice across VALORANT Champions Tour, Predator League and numerous Esports Titles.
             </p>
             <div class="flex flex-wrap gap-4 pt-2">
                 <a href="#highlights" class="bg-brand-red hover:bg-red-600 px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition">
@@ -183,14 +184,13 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             
             <!-- Photo 1 (Your Uploaded stage1 Image) -->
-            <!-- Photo 1 (Your Uploaded Image) -->
-<div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('images/stage1.jpg', 'Arena Stage Hosting - VCT Pacific')">
-    <img src="images/stage1.jpg" alt="Stage Hosting" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
-    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-        <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
-        <h3 class="text-lg font-bold">VCT Pacific Arena Stage</h3>
-    </div>
-</div>
+            <div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('images/stage1.jpg', 'Arena Stage Hosting - VCT Pacific')">
+                <img src="images/stage1.jpg" alt="Stage Hosting" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
+                    <h3 class="text-lg font-bold">VCT Pacific Arena Stage</h3>
+                </div>
+            </div>
 
             <!-- Photo 2 (Placeholder) -->
             <div class="gallery-item casting relative group overflow-hidden rounded-xl border border-gray-800 bg-brand-card cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800', 'Desk Anchor & Color Casting')">
@@ -231,6 +231,176 @@
         </div>
     </section>
 
+    <!-- CAREER ARCHIVE SECTION (LOW-KEY MAIN PAGE LINK) -->
+    <section id="events" class="py-16 px-6 max-w-5xl mx-auto border-t border-gray-800 text-center">
+        <h2 class="text-3xl font-black mb-2 tracking-tight">CAREER ARCHIVE</h2>
+        <p class="text-gray-400 text-sm max-w-xl mx-auto mb-8">15+ years of live broadcasts, S-Tier stage hosting, and multi-game tournaments across 330+ events.</p>
+
+        <!-- MINIMAL STATS STRIP -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-8 p-4 bg-brand-card/50 rounded-xl border border-gray-800/80 text-center">
+            <div>
+                <div class="text-2xl font-black text-brand-red">330+</div>
+                <div class="text-xs text-gray-400 font-medium">Broadcasts</div>
+            </div>
+            <div>
+                <div class="text-2xl font-black text-brand-gold">15+</div>
+                <div class="text-xs text-gray-400 font-medium">Years Active</div>
+            </div>
+            <div>
+                <div class="text-2xl font-black text-blue-400">50+</div>
+                <div class="text-xs text-gray-400 font-medium">S-Tier Venues</div>
+            </div>
+            <div>
+                <div class="text-2xl font-black text-white">20+</div>
+                <div class="text-xs text-gray-400 font-medium">Game Titles</div>
+            </div>
+        </div>
+
+        <!-- BUTTON TO OPEN EVENT MODAL TAB -->
+        <button onclick="openEventsModal()" class="inline-flex items-center gap-3 bg-brand-card hover:bg-gray-800 border border-gray-700 hover:border-brand-red text-white font-bold px-8 py-3.5 rounded-xl transition duration-300 shadow-lg group">
+            <i class="fa-solid fa-list-check text-brand-red group-hover:scale-110 transition"></i>
+            <span>Browse Event History (2011–2026)</span>
+            <i class="fa-solid fa-arrow-right text-xs text-gray-400 group-hover:translate-x-1 transition"></i>
+        </button>
+    </section>
+
+    <!-- FULL EVENT HISTORY MODAL TAB WITH ERA & ROLE FILTERS -->
+    <div id="events-modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col justify-center items-center p-4 md:p-8 backdrop-blur-md">
+        
+        <!-- MODAL CONTAINER -->
+        <div class="bg-brand-dark border border-gray-800 w-full max-w-4xl max-h-[85vh] rounded-2xl flex flex-col overflow-hidden shadow-2xl relative">
+            
+            <!-- MODAL HEADER -->
+            <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-brand-card/40">
+                <div>
+                    <h3 class="text-2xl font-black tracking-tight text-white">CAREER EVENT DATABASE</h3>
+                    <p class="text-xs text-gray-400 mt-1">Filter events by era or role type below.</p>
+                </div>
+                <button onclick="closeEventsModal()" class="text-gray-400 hover:text-brand-red text-2xl font-bold p-2 transition">&times;</button>
+            </div>
+
+            <!-- FILTER BARS (ERA & ROLE) -->
+            <div class="p-4 border-b border-gray-800/80 bg-black/20 space-y-3">
+                
+                <!-- ERA FILTERS -->
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="text-xs text-gray-500 font-bold uppercase self-center mr-2">Era:</span>
+                    <button onclick="filterEra('all', this)" class="era-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition">All</button>
+                    <button onclick="filterEra('2024-2026', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2024–2026</button>
+                    <button onclick="filterEra('2020-2023', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2020–2023</button>
+                    <button onclick="filterEra('2015-2019', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2015–2019</button>
+                    <button onclick="filterEra('2011-2014', this)" class="era-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">2011–2014</button>
+                </div>
+
+                <!-- ROLE FILTERS -->
+                <div class="flex flex-wrap justify-center gap-2 pt-1 border-t border-gray-800/50">
+                    <span class="text-xs text-gray-500 font-bold uppercase self-center mr-2">Role:</span>
+                    <button onclick="filterRole('all', this)" class="role-btn bg-brand-red text-white px-3.5 py-1 rounded-md font-bold text-xs transition">All Roles</button>
+                    <button onclick="filterRole('role-host', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Hosting</button>
+                    <button onclick="filterRole('role-caster', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Casting</button>
+                    <button onclick="filterRole('role-influencer', this)" class="role-btn bg-brand-card hover:bg-gray-800 border border-gray-700 text-gray-300 px-3.5 py-1 rounded-md font-bold text-xs transition">Creator / Influencer</button>
+                </div>
+
+            </div>
+
+            <!-- MODAL SCROLLABLE EVENT LIST -->
+            <div class="p-6 overflow-y-auto space-y-3 flex-1 custom-scrollbar">
+
+                <!-- EVENT ITEM 1 (HOST) -->
+                <div class="era-item role-host 2024-2026 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-brand-red font-bold">2025–2026</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-xs font-semibold text-gray-300">VALORANT</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white">VALORANT Champions Tour (VCT) Pacific</h4>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs bg-brand-red/10 text-brand-red border border-brand-red/30 px-2.5 py-1 rounded font-medium">Stage Host</span>
+                        <span class="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 px-2.5 py-1 rounded font-medium">Desk Anchor</span>
+                    </div>
+                </div>
+
+                <!-- EVENT ITEM 2 (CASTER) -->
+                <div class="era-item role-caster 2024-2026 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-brand-gold font-bold">2024</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-xs font-semibold text-gray-300">FPS Titles</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white">Esports World Cup (EWC) — Riyadh</h4>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs bg-brand-gold/10 text-brand-gold border border-brand-gold/30 px-2.5 py-1 rounded font-medium">Color Caster</span>
+                    </div>
+                </div>
+
+                <!-- EVENT ITEM 3 (INFLUENCER / CREATOR) -->
+                <div class="era-item role-influencer 2024-2026 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-purple-400 font-bold">2024</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-xs font-semibold text-gray-300">Hardware & Tech</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white">ASUS ROG & Predator Hardware Launch Keynote</h4>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs bg-purple-500/10 text-purple-400 border border-purple-500/30 px-2.5 py-1 rounded font-medium">Brand Creator</span>
+                    </div>
+                </div>
+
+                <!-- EVENT ITEM 4 (HOST) -->
+                <div class="era-item role-host 2020-2023 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-blue-400 font-bold">2023</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-xs font-semibold text-gray-300">VALORANT / PUBG</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white">APAC Predator League Grand Finals</h4>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs bg-blue-500/10 text-blue-400 border border-blue-500/30 px-2.5 py-1 rounded font-medium">Arena Host</span>
+                    </div>
+                </div>
+
+                <!-- EVENT ITEM 5 (CASTER) -->
+                <div class="era-item role-caster 2015-2019 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-red-400 font-bold">2018</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-xs font-semibold text-gray-300">Crossfire</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white">Crossfire APAC Championship</h4>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs bg-red-500/10 text-red-400 border border-red-500/30 px-2.5 py-1 rounded font-medium">Shoutcaster</span>
+                    </div>
+                </div>
+
+                <!-- EVENT ITEM 6 (HOST) -->
+                <div class="era-item role-host 2011-2014 bg-brand-card/40 hover:bg-brand-card p-4 rounded-lg border border-gray-800/80 transition flex flex-col md:flex-row md:items-center justify-between gap-3">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-mono text-gray-400 font-bold">2011–2014</span>
+                            <span class="text-xs text-gray-500">•</span>
+                            <span class="text-xs font-semibold text-gray-300">Multiple Titles</span>
+                        </div>
+                        <h4 class="font-bold text-base text-white">National & Regional Grassroots Tournaments</h4>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs bg-gray-500/10 text-gray-300 border border-gray-600/30 px-2.5 py-1 rounded font-medium">Tournament Host</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- LIGHTBOX MODAL POPUP -->
     <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex-col items-center justify-center p-4">
         <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl font-bold hover:text-brand-red transition">&times;</button>
@@ -265,8 +435,13 @@
         <p>© 2026 Justin "Vill" Villaseran. All rights reserved.</p>
     </footer>
 
-    <!-- GALLERY INTERACTION SCRIPTS -->
+    <!-- INTERACTION SCRIPTS -->
     <script>
+        // GLOBAL FILTER STATES
+        let currentEra = 'all';
+        let currentRole = 'all';
+
+        // GALLERY FILTER
         function filterGallery(category, clickedBtn) {
             const items = document.querySelectorAll('.gallery-item');
             const buttons = document.querySelectorAll('.gallery-btn');
@@ -288,6 +463,66 @@
             });
         }
 
+        // ERA FILTER
+        function filterEra(era, clickedBtn) {
+            currentEra = era;
+            const buttons = document.querySelectorAll('.era-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-red', 'text-white');
+                btn.classList.add('bg-brand-card', 'text-gray-300');
+            });
+
+            clickedBtn.classList.remove('bg-brand-card', 'text-gray-300');
+            clickedBtn.classList.add('bg-brand-red', 'text-white');
+
+            applyCombinedFilters();
+        }
+
+        // ROLE FILTER
+        function filterRole(role, clickedBtn) {
+            currentRole = role;
+            const buttons = document.querySelectorAll('.role-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-red', 'text-white');
+                btn.classList.add('bg-brand-card', 'text-gray-300');
+            });
+
+            clickedBtn.classList.remove('bg-brand-card', 'text-gray-300');
+            clickedBtn.classList.add('bg-brand-red', 'text-white');
+
+            applyCombinedFilters();
+        }
+
+        // APPLY DUAL ERA & ROLE FILTERS
+        function applyCombinedFilters() {
+            const items = document.querySelectorAll('.era-item');
+
+            items.forEach(item => {
+                const matchesEra = (currentEra === 'all' || item.classList.contains(currentEra));
+                const matchesRole = (currentRole === 'all' || item.classList.contains(currentRole));
+
+                if (matchesEra && matchesRole) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // EVENTS MODAL
+        function openEventsModal() {
+            document.getElementById('events-modal').classList.remove('hidden');
+            document.getElementById('events-modal').classList.add('flex');
+        }
+
+        function closeEventsModal() {
+            document.getElementById('events-modal').classList.add('hidden');
+            document.getElementById('events-modal').classList.remove('flex');
+        }
+
+        // LIGHTBOX
         function openLightbox(src, caption) {
             document.getElementById('lightbox-img').src = src;
             document.getElementById('lightbox-caption').innerText = caption;
