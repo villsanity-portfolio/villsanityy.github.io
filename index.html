@@ -59,7 +59,7 @@
         .animate-ticker {
             display: flex;
             width: max-content;
-            animation: ticker 25s linear infinite;
+            animation: ticker 35s linear infinite;
         }
         .animate-ticker:hover {
             animation-play-state: paused;
@@ -103,7 +103,7 @@
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-brand-border/80 z-50 shadow-xs">
         <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center">
-                <img src="images/logo.png" alt="VILL Logo" class="h-9 w-auto object-contain hover:scale-105 transition duration-200">
+                <img src="logo.png" alt="VILL Logo" class="h-9 w-auto object-contain hover:scale-105 transition duration-200">
             </a>
             
             <div class="hidden md:flex space-x-8 font-semibold text-sm text-brand-muted">
@@ -152,7 +152,7 @@
         </div>
     </section>
 
-    <!-- CREDENTIALS SECTION (GITHUB ROLLING LOGO TICKER) -->
+    <!-- CREDENTIALS SECTION (FULL 10-BRAND OPTICALLY BALANCED TICKER) -->
     <section id="credentials" class="bg-white/80 backdrop-blur-md py-8 border-y border-brand-border overflow-hidden shadow-xs">
         <p class="text-xs font-bold uppercase tracking-widest text-brand-muted text-center mb-6">
             Casted & Hosted S-Tier Global Broadcasts
@@ -160,39 +160,71 @@
         
         <div class="relative w-full overflow-hidden flex [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <div class="animate-ticker flex items-center">
-                <!-- SET 1 (GITHUB LOGOS) -->
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                
+                <!-- SET 1 -->
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="vct.png" alt="VCT Pacific" class="h-9 md:h-11 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="riot.png" alt="Riot Games" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="ewc.png" alt="Esports World Cup" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/predator.png" alt="Predator League" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="nvidia.png" alt="NVIDIA" class="h-8 md:h-10 max-w-[170px] md:max-w-[200px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/riot.png" alt="Riot Games" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="predator.png" alt="Acer Predator" class="h-9 md:h-11 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="asus.png" alt="ASUS ROG" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="intel.png" alt="Intel" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="razer.png" alt="Razer" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="tencent.png" alt="Tencent Games" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="wcg.png" alt="World Cyber Games" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
 
-                <!-- SET 2 (SEAMLESS LOOP DUPLICATE) -->
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <!-- SET 2 (DUPLICATE FOR SEAMLESS CONTINUOUS LOOP) -->
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="vct.png" alt="VCT Pacific" class="h-9 md:h-11 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="riot.png" alt="Riot Games" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="ewc.png" alt="Esports World Cup" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/predator.png" alt="Predator League" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="nvidia.png" alt="NVIDIA" class="h-8 md:h-10 max-w-[170px] md:max-w-[200px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
-                <div class="w-36 md:w-44 flex justify-center items-center px-4">
-                    <img src="images/riot.png" alt="Riot Games" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="predator.png" alt="Acer Predator" class="h-9 md:h-11 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
                 </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="asus.png" alt="ASUS ROG" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="intel.png" alt="Intel" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="razer.png" alt="Razer" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="tencent.png" alt="Tencent Games" class="h-6 md:h-8 max-w-[150px] md:max-w-[180px] object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="flex items-center justify-center shrink-0 px-6 md:px-8">
+                    <img src="wcg.png" alt="World Cyber Games" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+
             </div>
         </div>
     </section>
@@ -314,7 +346,7 @@
     <!-- CONTACT / BOOKING SECTION -->
     <section id="contact" class="py-20 px-6 max-w-4xl mx-auto border-t border-brand-border text-center">
         <div class="flex justify-center mb-6">
-            <img src="images/logo.png" alt="VILL Logo" class="h-16 w-auto object-contain">
+            <img src="logo.png" alt="VILL Logo" class="h-16 w-auto object-contain">
         </div>
 
         <h2 class="text-4xl font-black mb-4">BOOK TALENT & INQUIRIES</h2>
