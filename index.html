@@ -36,7 +36,7 @@
         /* Smooth scrolling with header offset */
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 80px; /* Ensures fixed nav doesn't overlap section headings */
+            scroll-padding-top: 80px;
         }
 
         .bg-geometric-lines {
@@ -59,7 +59,7 @@
         .animate-ticker {
             display: flex;
             width: max-content;
-            animation: ticker 30s linear infinite;
+            animation: ticker 25s linear infinite;
         }
         .animate-ticker:hover {
             animation-play-state: paused;
@@ -103,7 +103,7 @@
     <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-brand-border/80 z-50 shadow-xs">
         <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center">
-                <img src="logo.png" alt="VILL Logo" class="h-9 w-auto object-contain hover:scale-105 transition duration-200">
+                <img src="images/logo.png" alt="VILL Logo" class="h-9 w-auto object-contain hover:scale-105 transition duration-200">
             </a>
             
             <div class="hidden md:flex space-x-8 font-semibold text-sm text-brand-muted">
@@ -152,37 +152,47 @@
         </div>
     </section>
 
-    <!-- CREDENTIALS SECTION (10-LOGO INFINITE TICKER) -->
+    <!-- CREDENTIALS SECTION (GITHUB ROLLING LOGO TICKER) -->
     <section id="credentials" class="bg-white/80 backdrop-blur-md py-8 border-y border-brand-border overflow-hidden shadow-xs">
         <p class="text-xs font-bold uppercase tracking-widest text-brand-muted text-center mb-6">
             Casted & Hosted S-Tier Global Broadcasts
         </p>
         
         <div class="relative w-full overflow-hidden flex [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-            <div class="animate-ticker flex items-center gap-12 md:gap-16 pr-12">
-                <!-- SET 1 -->
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=VCT+PACIFIC" alt="VCT Pacific" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ESPORTS+WORLD+CUP" alt="Esports World Cup" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=CROSSFIRE+APAC" alt="Crossfire APAC" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PREDATOR+LEAGUE" alt="Predator League" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=UAAP+ESPORTS" alt="UAAP Esports" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PUBG+MOBILE" alt="PUBG Mobile" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=WORLD+CYBER+GAMES" alt="WCG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=NVIDIA" alt="NVIDIA" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ASUS+ROG" alt="ASUS ROG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=RAZER+GOLD" alt="Razer Gold" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+            <div class="animate-ticker flex items-center">
+                <!-- SET 1 (GITHUB LOGOS) -->
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/predator.png" alt="Predator League" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/riot.png" alt="Riot Games" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
 
-                <!-- SET 2 (LOOP DUPLICATE) -->
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=VCT+PACIFIC" alt="VCT Pacific" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ESPORTS+WORLD+CUP" alt="Esports World Cup" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=CROSSFIRE+APAC" alt="Crossfire APAC" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PREDATOR+LEAGUE" alt="Predator League" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=UAAP+ESPORTS" alt="UAAP Esports" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=PUBG+MOBILE" alt="PUBG Mobile" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=WORLD+CYBER+GAMES" alt="WCG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=NVIDIA" alt="NVIDIA" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=ASUS+ROG" alt="ASUS ROG" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
-                <img src="https://placehold.co/160x50/F8FAFC/0F172A?text=RAZER+GOLD" alt="Razer Gold" class="h-8 md:h-10 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                <!-- SET 2 (SEAMLESS LOOP DUPLICATE) -->
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/predator.png" alt="Predator League" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
+                <div class="w-36 md:w-44 flex justify-center items-center px-4">
+                    <img src="images/riot.png" alt="Riot Games" class="max-h-10 md:max-h-12 w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                </div>
             </div>
         </div>
     </section>
@@ -304,7 +314,7 @@
     <!-- CONTACT / BOOKING SECTION -->
     <section id="contact" class="py-20 px-6 max-w-4xl mx-auto border-t border-brand-border text-center">
         <div class="flex justify-center mb-6">
-            <img src="logo.png" alt="VILL Logo" class="h-16 w-auto object-contain">
+            <img src="images/logo.png" alt="VILL Logo" class="h-16 w-auto object-contain">
         </div>
 
         <h2 class="text-4xl font-black mb-4">BOOK TALENT & INQUIRIES</h2>
