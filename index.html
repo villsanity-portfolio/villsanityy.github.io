@@ -251,70 +251,98 @@
     </div>
 </section>
 
-    <!-- FEATURED SHOWCASE -->
-    <section id="highlights" class="py-16 px-6 max-w-6xl mx-auto">
-        <div class="text-center mb-12">
-            <h2 class="text-4xl font-black mb-3 text-slate-900 tracking-tight">BROADCAST & STAGE SHOWCASE</h2>
-            <p class="text-brand-muted text-base">High-energy stage hypes, tactical commentary, and brand activations.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-
-
-            <!-- CARD 1: CASTING -->
-<div class="bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border p-8 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition-all duration-300 flex flex-col justify-between group">
-    <div>
-        <div class="flex items-center justify-between mb-4">
-            <span class="text-brand-red font-bold text-xs uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Casting</span>
-            <i class="fa-solid fa-microphone-lines text-brand-red text-xl group-hover:scale-110 transition duration-300"></i>
-        </div>
-        <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-brand-red transition">FPS & Tier-1 Esports</h3>
-        <p class="text-sm text-brand-muted leading-relaxed">Award-winning tactical analysis, round breakdown, and clutch commentary for Valorant Champions Tour and other FPS titles.</p>
+    <!-- FEATURED SHOWCASE (4-CARD GRID WITH AWARDS) -->
+<section id="highlights" class="py-16 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+        <h2 class="text-4xl font-black mb-3 text-slate-900 tracking-tight">BROADCAST & STAGE SHOWCASE</h2>
+        <p class="text-brand-muted text-base">High-energy stage hypes, tactical commentary, brand activations, and industry recognitions.</p>
     </div>
-    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
-        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Play-by-Play / Analysis</span>
-        <a href="#gallery" onclick="filterGallery('casting', document.querySelector('.gallery-btn:nth-child(3)'))" class="text-brand-red font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all">
-            Clips <i class="fa-solid fa-arrow-right text-[10px]"></i>
-        </a>
-    </div>
-</div>
 
-            <!-- CARD 2: STAGE HOSTING -->
-            <div class="bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border p-8 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition-all duration-300 flex flex-col justify-between group">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-brand-red font-bold text-xs uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Stage Hosting</span>
-                        <i class="fa-solid fa-tower-broadcast text-brand-red text-xl group-hover:scale-110 transition duration-300"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-brand-red transition">S-Tier Arena Events</h3>
-                    <p class="text-sm text-brand-muted leading-relaxed">Crowd engagement, winner interviews, and opening ceremony hosting for live stadium tournaments.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        
+        <!-- CARD 1: CASTING -->
+        <div class="bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border p-6 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-brand-red font-bold text-xs uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Casting</span>
+                    <i class="fa-solid fa-microphone-lines text-brand-red text-xl group-hover:scale-110 transition duration-300"></i>
                 </div>
-                <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Live Arena & Hype</span>
-                    <a href="#gallery" onclick="filterGallery('stage', document.querySelector('.gallery-btn:nth-child(2)'))" class="text-brand-red font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all">
-                        Highlights <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
+                <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-brand-red transition">FPS & Tier-1 Esports</h3>
+                <p class="text-sm text-brand-muted leading-relaxed">Award-winning tactical analysis, round breakdown, and clutch commentary for Valorant Champions Tour and other FPS titles.</p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Play-by-Play</span>
+                <a href="#gallery" onclick="filterGallery('casting', document.querySelector('.gallery-btn:nth-child(3)'))" class="text-brand-red font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all">
+                    Clips <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 2: STAGE HOSTING -->
+        <div class="bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border p-6 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-brand-red font-bold text-xs uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Stage Hosting</span>
+                    <i class="fa-solid fa-tower-broadcast text-brand-red text-xl group-hover:scale-110 transition duration-300"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-brand-red transition">S-Tier Arena Events</h3>
+                <p class="text-sm text-brand-muted leading-relaxed">Crowd engagement, winner interviews, and opening ceremony hosting for live stadium tournaments.</p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Live Arena</span>
+                <a href="#gallery" onclick="filterGallery('stage', document.querySelector('.gallery-btn:nth-child(2)'))" class="text-brand-red font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all">
+                    Highlights <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 3: TECH & CREATOR -->
+        <div class="bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border p-6 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-brand-red font-bold text-xs uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Tech & Creator</span>
+                    <i class="fa-solid fa-laptop-code text-brand-red text-xl group-hover:scale-110 transition duration-300"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-brand-red transition">Brand Partnerships</h3>
+                <p class="text-sm text-brand-muted leading-relaxed">Hardware reviews and product showcases with NVIDIA, PCWORX, Acer Predator and more!</p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">KOL & Brands</span>
+                <a href="#gallery" onclick="filterGallery('activation', document.querySelector('.gallery-btn:nth-child(4)'))" class="text-brand-red font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all">
+                    Brands <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 4: ACCOLADES & AWARDS -->
+        <div class="bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border p-6 shadow-sm hover:shadow-xl hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between group">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span class="text-amber-700 font-bold text-xs uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/30">Accolades</span>
+                    <i class="fa-solid fa-trophy text-amber-500 text-xl group-hover:scale-110 transition duration-300"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900 group-hover:text-amber-600 transition">Industry Awards</h3>
+                <div class="space-y-2 text-sm text-brand-muted leading-relaxed">
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-award text-amber-500 mt-1 shrink-0"></i>
+                        <span><strong>Best Stage Host of the Year ('25)</strong> — Philippine Esports Awards</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i class="fa-solid fa-award text-amber-500 mt-1 shrink-0"></i>
+                        <span><strong>Best Color Caster ('23)</strong> — Philippine Esports Awards</span>
+                    </div>
                 </div>
             </div>
-
-            <!-- CARD 3: TECH & CREATOR -->
-<div class="bg-white/90 backdrop-blur-xs rounded-2xl border border-brand-border p-8 shadow-sm hover:shadow-xl hover:border-brand-red/50 transition-all duration-300 flex flex-col justify-between group">
-    <div>
-        <div class="flex items-center justify-between mb-4">
-            <span class="text-brand-red font-bold text-xs uppercase tracking-widest bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">Tech & Creator</span>
-            <i class="fa-solid fa-laptop-code text-brand-red text-xl group-hover:scale-110 transition duration-300"></i>
+            <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Recognitions</span>
+                <a href="#events" onclick="openEventsModal()" class="text-amber-600 font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all">
+                    Database <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
         </div>
-        <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-brand-red transition">Brand Partnerships</h3>
-        <p class="text-sm text-brand-muted leading-relaxed">Hardware reviews and product showcases with NVIDIA, PCWORX, Acer Predator and more!</p>
+
     </div>
-    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
-        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">KOL & Endorsements</span>
-        <a href="#gallery" onclick="filterGallery('activation', document.querySelector('.gallery-btn:nth-child(4)'))" class="text-brand-red font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all">
-            Brands <i class="fa-solid fa-arrow-right text-[10px]"></i>
-        </a>
-    </div>
-</div>
-    </section>
+</section>
 
     <!-- CAREER ARCHIVE SECTION -->
     <section id="events" class="py-16 px-6 max-w-5xl mx-auto border-t border-brand-border text-center">
