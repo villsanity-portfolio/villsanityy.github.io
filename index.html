@@ -165,7 +165,7 @@
         <!-- HERO MEDIA / SHOWREEL -->
         <div class="md:w-1/2 w-full">
             <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-brand-border bg-slate-900 flex items-center justify-center p-1 group">
-                <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/t8U57opSTLo" title="Justin Villaseran Reel" allowfullscreen></iframe>
+                <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/WFnRx60mbSw?modestbranding=1&rel=0" title="Justin Villaseran Reel" allowfullscreen></iframe>
             </div>
             <p class="text-[11px] text-center text-brand-muted font-medium mt-2">
                 <i class="fa-solid fa-circle-info text-brand-red mr-1"></i> Featured Broadcast & Stage Hosting Highlights
@@ -368,81 +368,140 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Existing Photo Items -->
-            <div class="gallery-item stage md:col-span-2 relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
-                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800" alt="Stage Hosting" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
-                    <h3 class="text-lg font-bold text-white">VCT Pacific Arena Stage</h3>
-                </div>
-            </div>
-
-            <div class="gallery-item casting relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
-                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800" alt="Desk Caster" class="w-full h-72 md:h-80 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <span class="text-amber-400 font-bold text-xs uppercase">Broadcast Desk</span>
-                    <h3 class="text-lg font-bold text-white">International Casting</h3>
-                </div>
-            </div>
-
-            <div class="gallery-item stage relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800" alt="Live Event Stage" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <span class="text-brand-red font-bold text-xs uppercase">Stage Hosting</span>
-                    <h3 class="text-lg font-bold text-white">Esports World Cup Arena</h3>
-                </div>
-            </div>
-
-            <div class="gallery-item casting relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
-                <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=800" alt="Crossfire Casting" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <span class="text-red-500 font-bold text-xs uppercase">Shoutcasting</span>
-                    <h3 class="text-lg font-bold text-white">Crossfire APAC Championship</h3>
-                </div>
-            </div>
-
-            <!-- BRAND ACTIVATION YOUTUBE VIDEO EMBEDS -->
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+        <!-- SYMMETRICAL PREVIEW GRID (2 VIDEOS PER SECTION) -->
+        <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            
+            <!-- STAGE HOSTING PREVIEW 1 -->
+            <div class="gallery-item stage relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
                 <div class="relative w-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/2m_gUZ5wKHs" title="Brand Activation Clip 1" allowfullscreen></iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/rSe1cspPKYU?modestbranding=1&rel=0" title="Stage Hosting 1" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-brand-red font-bold text-xs uppercase tracking-wider">Stage Hosting</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Stage Hosting Highlight 1</h3>
+                </div>
+            </div>
+
+            <!-- STAGE HOSTING PREVIEW 2 -->
+            <div class="gallery-item stage relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/GYoVIQOl1uo?modestbranding=1&rel=0" title="Stage Hosting 2" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-brand-red font-bold text-xs uppercase tracking-wider">Stage Hosting</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Stage Hosting Highlight 2</h3>
+                </div>
+            </div>
+
+            <!-- CASTING PREVIEW 1 -->
+            <div class="gallery-item casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/4-NNWnIUUiM?modestbranding=1&rel=0" title="Casting 1" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-wider">Shoutcasting</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Casting Highlight 1</h3>
+                </div>
+            </div>
+
+            <!-- CASTING PREVIEW 2 -->
+            <div class="gallery-item casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/OtJ5t6LRkeM?modestbranding=1&rel=0" title="Casting 2" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-wider">Shoutcasting</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Casting Highlight 2</h3>
+                </div>
+            </div>
+
+            <!-- BRAND ACTIVATION PREVIEW 1 (Short) -->
+            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-[9/16] max-h-[350px] flex items-center justify-center">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/IGEaQmELU2c?modestbranding=1&rel=0" title="Brand Activation 1" allowfullscreen></iframe>
                 </div>
                 <div class="p-4 bg-white">
                     <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
-                    <h3 class="text-base font-bold text-slate-900 mt-1">Partnership Showcase 1</h3>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Short 1</h3>
+                </div>
+            </div>
+
+            <!-- BRAND ACTIVATION PREVIEW 2 (Short) -->
+            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-[9/16] max-h-[350px] flex items-center justify-center">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/Mi03o8eKs_k?modestbranding=1&rel=0" title="Brand Activation 2" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Short 2</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- HIDDEN EXTRA ITEMS (REVEALED ON CLICK) -->
+        <div id="extra-gallery-items" class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-6 hidden">
+            
+            <!-- REMAINING CASTING -->
+            <div class="gallery-item casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/sJXhUiMystk?modestbranding=1&rel=0" title="Casting 3" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-wider">Shoutcasting</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Casting Highlight 3</h3>
+                </div>
+            </div>
+
+            <!-- REMAINING BRAND ACTIVATIONS -->
+            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/u20caVkmUQo?modestbranding=1&rel=0" title="Brand Activation 3" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Video 3</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+                <div class="relative w-full aspect-[9/16] max-h-[350px] flex items-center justify-center">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/LK6IVm50u-A?modestbranding=1&rel=0" title="Brand Activation 4" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Short 3</h3>
                 </div>
             </div>
 
             <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
                 <div class="relative w-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/3-lxiGg38VE" title="Brand Activation Clip 2" allowfullscreen></iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/jmfJK0thykQ?modestbranding=1&rel=0" title="Brand Activation 5" allowfullscreen></iframe>
                 </div>
                 <div class="p-4 bg-white">
                     <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
-                    <h3 class="text-base font-bold text-slate-900 mt-1">Partnership Showcase 2</h3>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Video 5</h3>
                 </div>
             </div>
 
             <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
                 <div class="relative w-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/__8Aw54pUNc" title="Brand Activation Clip 3" allowfullscreen></iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/4fwBc1je0Qs?modestbranding=1&rel=0" title="Brand Activation 6" allowfullscreen></iframe>
                 </div>
                 <div class="p-4 bg-white">
                     <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
-                    <h3 class="text-base font-bold text-slate-900 mt-1">Partnership Showcase 3</h3>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Video 6</h3>
                 </div>
             </div>
 
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
-                <div class="relative w-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/A0C3ZAiQbiM" title="Brand Activation Clip 4" allowfullscreen></iframe>
-                </div>
-                <div class="p-4 bg-white">
-                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
-                    <h3 class="text-base font-bold text-slate-900 mt-1">Partnership Showcase 4</h3>
-                </div>
-            </div>
+        </div>
 
+        <!-- VIEW MORE BUTTON -->
+        <div class="text-center mt-12">
+            <button id="view-more-gallery-btn" onclick="toggleGalleryExpansion()" class="inline-flex items-center gap-2 bg-white hover:bg-gray-50 border border-brand-border hover:border-brand-red text-brand-text font-bold px-8 py-3.5 rounded-xl transition duration-300 shadow-sm hover:shadow-md">
+                <span id="view-more-text">View More Uploads</span>
+                <i id="view-more-icon" class="fa-solid fa-chevron-down text-xs text-brand-red"></i>
+            </button>
         </div>
     </section>
 
@@ -938,6 +997,23 @@
 
         function closeEventsModal() {
             document.getElementById('events-modal').classList.add('hidden');
+        }
+
+        function toggleGalleryExpansion() {
+            const extraItems = document.getElementById('extra-gallery-items');
+            const viewMoreText = document.getElementById('view-more-text');
+            const viewMoreIcon = document.getElementById('view-more-icon');
+
+            if (extraItems.classList.contains('hidden')) {
+                extraItems.classList.remove('hidden');
+                viewMoreText.innerText = "Show Less";
+                viewMoreIcon.className = "fa-solid fa-chevron-up text-xs text-brand-red";
+            } else {
+                extraItems.classList.add('hidden');
+                viewMoreText.innerText = "View More Uploads";
+                viewMoreIcon.className = "fa-solid fa-chevron-down text-xs text-brand-red";
+                document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+            }
         }
     </script>
 </body>
