@@ -76,10 +76,20 @@
         .animate-ticker {
             display: flex;
             width: max-content;
-            animation: ticker 35s linear infinite;
+            animation: ticker 40s linear infinite;
         }
-        .animate-ticker:hover {
+        .ticker-container:hover .animate-ticker,
+        .ticker-container:active .animate-ticker {
             animation-play-state: paused;
+        }
+
+        /* Hide scrollbars for slick swiping */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 
@@ -190,86 +200,114 @@
         </div>
     </section>
 
-    <!-- CREDENTIALS SECTION -->
+    <!-- CREDENTIALS SECTION (WITH SWIPE & EXTRA BRAND LOGOS) -->
     <section id="credentials" class="bg-white/80 backdrop-blur-md py-8 border-y border-brand-border overflow-hidden shadow-xs">
         <p class="text-xs font-bold uppercase tracking-widest text-brand-muted text-center mb-6">
             TRUSTED BY BRANDS WORLDWIDE
         </p>
         
-        <div class="relative w-full overflow-hidden flex [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        <div class="ticker-container relative w-full overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing select-none flex [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]">
             <div class="animate-ticker flex items-center gap-4 md:gap-6 pr-4 md:pr-6">
                 
                 <!-- SET 1 -->
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/riot.png" alt="Riot Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/riot.png" alt="Riot Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+
+                <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/blizzard.png" alt="Blizzard Entertainment" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0 overflow-visible">
-                    <img src="images/asus.png" alt="ASUS ROG" class="max-h-full max-w-full object-contain scale-135 md:scale-150 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/asus.png" alt="ASUS ROG" class="max-h-full max-w-full object-contain scale-135 md:scale-150 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+
+                <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/smilegate.png" alt="Smilegate" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0 overflow-visible">
-                    <img src="images/razer.png" alt="Razer" class="max-h-full max-w-full object-contain scale-125 md:scale-135 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/razer.png" alt="Razer" class="max-h-full max-w-full object-contain scale-125 md:scale-135 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+
+                <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/realme.png" alt="realme" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/predator.png" alt="Acer Predator" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/predator.png" alt="Acer Predator" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/tencent.png" alt="Tencent Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/foodpanda.png" alt="foodpanda" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+
+                <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/tencent.png" alt="Tencent Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/intel.png" alt="Intel" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/intel.png" alt="Intel" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/wcg.png" alt="World Cyber Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/wcg.png" alt="World Cyber Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
                 <!-- SET 2 (DUPLICATE FOR CONTINUOUS LOOP) -->
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/vct.png" alt="VCT Pacific" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/riot.png" alt="Riot Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/riot.png" alt="Riot Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+                <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/blizzard.png" alt="Blizzard Entertainment" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0 overflow-visible">
-                    <img src="images/asus.png" alt="ASUS ROG" class="max-h-full max-w-full object-contain scale-135 md:scale-150 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/asus.png" alt="ASUS ROG" class="max-h-full max-w-full object-contain scale-135 md:scale-150 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/ewc.png" alt="Esports World Cup" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+                <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/smilegate.png" alt="Smilegate" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0 overflow-visible">
-                    <img src="images/razer.png" alt="Razer" class="max-h-full max-w-full object-contain scale-125 md:scale-135 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/razer.png" alt="Razer" class="max-h-full max-w-full object-contain scale-125 md:scale-135 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/nvidia.png" alt="NVIDIA" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+                <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/realme.png" alt="realme" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/predator.png" alt="Acer Predator" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/predator.png" alt="Acer Predator" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/tencent.png" alt="Tencent Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/foodpanda.png" alt="foodpanda" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
+                </div>
+                <div class="w-32 md:w-36 h-14 md:h-16 flex items-center justify-center shrink-0">
+                    <img src="images/tencent.png" alt="Tencent Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-24 md:w-28 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/intel.png" alt="Intel" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/intel.png" alt="Intel" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
                 <div class="w-28 md:w-32 h-14 md:h-16 flex items-center justify-center shrink-0">
-                    <img src="images/wcg.png" alt="World Cyber Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200">
+                    <img src="images/wcg.png" alt="World Cyber Games" class="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-200 pointer-events-none">
                 </div>
 
             </div>
@@ -610,7 +648,7 @@
         </div>
     </div>
 
-    <!-- SCRIPT FOR COMPLETE EVENT DATA & INTERACTION -->
+    <!-- SCRIPT FOR COMPLETE EVENT DATA, SWIPE DRAG & INTERACTION -->
     <script>
         const eventsData = [
             // 2026
@@ -976,7 +1014,7 @@
         ];
         const totalPhotos = photoFiles.length;
 
-        // Automatically Generate All Photos into the DOM on Load using a Modern Masonry Grid Layout with Skeleton Placeholders
+        // Automatically Generate All Photos into the DOM on Load
         window.addEventListener('DOMContentLoaded', () => {
             const photosContainer = document.getElementById('photos-grid-container');
             photosContainer.innerHTML = '';
@@ -997,7 +1035,27 @@
                 photosContainer.appendChild(photoCard);
             });
 
-            // Initial render of gallery based on 'all' tab & collapsed state
+            // Enable Mouse Drag to Scroll for Desktop Logo Ticker
+            const tickerContainer = document.querySelector('.ticker-container');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            tickerContainer.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - tickerContainer.offsetLeft;
+                scrollLeft = tickerContainer.scrollLeft;
+            });
+            tickerContainer.addEventListener('mouseleave', () => { isDown = false; });
+            tickerContainer.addEventListener('mouseup', () => { isDown = false; });
+            tickerContainer.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - tickerContainer.offsetLeft;
+                const walk = (x - startX) * 2;
+                tickerContainer.scrollLeft = scrollLeft - walk;
+            });
+
             updateGalleryDisplay();
         });
 
@@ -1061,15 +1119,13 @@
 
         function filterGallery(type, btn) {
             currentGalleryFilter = type;
-            isGalleryExpanded = false; // Reset expansion when switching tabs
+            isGalleryExpanded = false;
 
-            // Update button styles
             document.querySelectorAll('.gallery-btn').forEach(b => {
                 b.className = 'gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs';
             });
             btn.className = 'gallery-btn bg-brand-red text-white px-5 py-2 rounded-xl font-bold text-sm transition shadow-sm';
 
-            // Reset view more button text & icon
             document.getElementById('view-more-text').innerText = "View More Uploads";
             document.getElementById('view-more-icon').className = "fa-solid fa-chevron-down text-xs text-brand-red";
 
@@ -1082,13 +1138,11 @@
             const viewMoreBtnContainer = document.getElementById('view-more-gallery-btn').parentElement;
             const mainGrid = document.getElementById('gallery-grid');
 
-            // Handle photos tab specifically
             if (currentGalleryFilter === 'photos') {
                 mainGrid.classList.add('hidden');
                 photosGrid.classList.remove('hidden');
                 viewMoreBtnContainer.style.display = 'block';
 
-                // Toggle photo visibility based on expansion
                 const photoCards = photosGrid.querySelectorAll('.gallery-card');
                 photoCards.forEach((card) => {
                     const tier = card.getAttribute('data-tier');
@@ -1106,17 +1160,15 @@
                 return;
             }
 
-            // Normal video / default tabs
             photosGrid.classList.add('hidden');
             mainGrid.classList.remove('hidden');
             viewMoreBtnContainer.style.display = 'block';
 
             cards.forEach(card => {
                 const category = card.getAttribute('data-category');
-                const tier = card.getAttribute('data-tier'); // 'preview', 'secondary', 'extra'
+                const tier = card.getAttribute('data-tier');
 
                 if (category === 'photos') {
-                    // Handle photo preview card on 'all' tab
                     if (currentGalleryFilter === 'all') {
                         if (isGalleryExpanded) {
                             card.classList.remove('hidden');
@@ -1134,7 +1186,6 @@
                 }
 
                 if (currentGalleryFilter === 'all') {
-                    // On 'All' tab: show preview items of each category, plus all items if expanded
                     if (isGalleryExpanded) {
                         card.classList.remove('hidden');
                     } else {
@@ -1145,13 +1196,10 @@
                         }
                     }
                 } else {
-                    // On specific category tab (Stage, Casting, Brand Activations)
                     if (category === currentGalleryFilter) {
                         if (isGalleryExpanded) {
-                            // Show all items belonging to this category
                             card.classList.remove('hidden');
                         } else {
-                            // Show exactly 2 videos side-by-side (preview + secondary)
                             if (tier === 'preview' || tier === 'secondary') {
                                 card.classList.remove('hidden');
                             } else {
