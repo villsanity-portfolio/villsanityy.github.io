@@ -36,7 +36,7 @@
         /* Smooth scrolling with header offset */
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 80px;
+            scroll-padding-top: 100px;
         }
 
         .bg-geometric-lines {
@@ -360,12 +360,15 @@
             <h2 class="text-4xl font-black mb-3">ACTION GALLERY</h2>
             <p class="text-brand-muted">On stage, behind the desk, and live on S-Tier broadcasts.</p>
 
-            <div class="flex flex-wrap justify-center gap-3 mt-8">
-                <button onclick="filterGallery('all', this)" class="gallery-btn bg-brand-red text-white px-5 py-2 rounded-xl font-bold text-sm transition shadow-sm">All</button>
-                <button onclick="filterGallery('stage', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Stage Hosting</button>
-                <button onclick="filterGallery('casting', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Shoutcasting</button>
-                <button onclick="filterGallery('activation', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Brand Activations</button>
-                <button onclick="filterGallery('photos', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Photos</button>
+            <!-- STICKY FILTER BAR -->
+            <div class="sticky top-16 z-40 bg-white/90 backdrop-blur-md py-4 my-4 border-y border-brand-border/40 shadow-xs">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <button onclick="filterGallery('all', this)" class="gallery-btn bg-brand-red text-white px-5 py-2 rounded-xl font-bold text-sm transition shadow-sm">All</button>
+                    <button onclick="filterGallery('stage', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Stage Hosting</button>
+                    <button onclick="filterGallery('casting', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Shoutcasting</button>
+                    <button onclick="filterGallery('activation', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Brand Activations</button>
+                    <button onclick="filterGallery('photos', this)" class="gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs">Photos</button>
+                </div>
             </div>
         </div>
 
@@ -504,8 +507,8 @@
 
         </div>
 
-        <!-- DYNAMIC 34 PHOTOS GRID CONTAINER -->
-        <div id="photos-grid-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-6 hidden"></div>
+        <!-- DYNAMIC 34 PHOTOS MASONRY GRID CONTAINER -->
+        <div id="photos-grid-container" class="columns-1 sm:columns-2 md:columns-3 gap-6 max-w-5xl mx-auto mt-6 hidden space-y-6"></div>
 
         <!-- VIEW MORE BUTTON -->
         <div class="text-center mt-12">
@@ -957,17 +960,17 @@
         ];
         const totalPhotos = photoFiles.length;
 
-        // Automatically Generate All Photos into the DOM on Load matching exact filenames
+        // Automatically Generate All Photos into the DOM on Load using a Modern Masonry Grid Layout with Skeleton Placeholders
         window.addEventListener('DOMContentLoaded', () => {
             const photosContainer = document.getElementById('photos-grid-container');
             photosContainer.innerHTML = '';
 
             photoFiles.forEach((filename, index) => {
                 const photoCard = document.createElement('div');
-                photoCard.className = "gallery-item photos relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition";
+                photoCard.className = "gallery-item photos relative group overflow-hidden rounded-2xl border border-brand-border bg-slate-100 animate-pulse cursor-pointer shadow-sm hover:shadow-xl transition mb-6 break-inside-avoid";
                 photoCard.setAttribute('onclick', `openLightbox(${index})`);
                 photoCard.innerHTML = `
-                    <img src="images/${filename}" alt="Justin Villaseran Event Photo ${index + 1}" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500" loading="lazy">
+                    <img src="images/${filename}" alt="Justin Villaseran Event Photo ${index + 1}" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" loading="lazy" onload="this.parentElement.classList.remove('bg-slate-100', 'animate-pulse')">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                         <span class="text-purple-400 font-bold text-xs uppercase">Photo Gallery</span>
                         <h3 class="text-lg font-bold text-white">Event Archive Photo #${index + 1}</h3>
@@ -1001,7 +1004,7 @@
                 }).join(' ');
 
                 const element = document.createElement('div');
-                element.className = `era-item bg-white/90 hover:bg-white p-4 rounded-xl border border-brand-border transition flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-xs hover:shadow-md`;
+                element.className = `era-item bg-white/90 hover:bg-white p-4 rounded-xl border border-brand-border border-l-4 border-l-transparent hover:border-l-brand-red transition flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-xs hover:shadow-md`;
                 element.innerHTML = `
                     <div class="space-y-1">
                         <div class="flex items-center gap-2">
@@ -1041,7 +1044,7 @@
             });
             btn.className = 'gallery-btn bg-brand-red text-white px-5 py-2 rounded-xl font-bold text-sm transition shadow-sm';
 
-            // Show full photos container automatically if 'photos' filter is selected
+            // Show full photos masonry container automatically if 'photos' filter is selected
             const photosGrid = document.getElementById('photos-grid-container');
             if (type === 'photos') {
                 photosGrid.classList.remove('hidden');
