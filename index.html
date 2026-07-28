@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -373,11 +372,11 @@
             </div>
         </div>
 
-        <!-- 4-ITEM PREVIEW GRID (UPDATED PREVIEWS FOR HOSTING, CASTING, ACTIVATION) -->
+        <!-- UNIFIED GALLERY GRID (ALL ITEMS SORTED BY CATEGORY WITH DATA ATTRIBUTES) -->
         <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             
-            <!-- STAGE HOSTING PREVIEW (Updated to GYoVIQOl1uo) -->
-            <div class="gallery-item stage relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <!-- STAGE HOSTING VIDEO 1 (Default Preview) -->
+            <div class="gallery-card stage relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition" data-category="stage" data-tier="preview">
                 <div class="relative w-full aspect-video">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/GYoVIQOl1uo?modestbranding=1&rel=0" title="Stage Hosting Highlight" allowfullscreen></iframe>
                 </div>
@@ -387,44 +386,8 @@
                 </div>
             </div>
 
-            <!-- CASTING PREVIEW (Updated to sJXhUiMystk) -->
-            <div class="gallery-item casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
-                <div class="relative w-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/sJXhUiMystk?modestbranding=1&rel=0" title="Casting Highlight" allowfullscreen></iframe>
-                </div>
-                <div class="p-4 bg-white">
-                    <span class="text-amber-600 font-bold text-xs uppercase tracking-wider">Shoutcasting</span>
-                    <h3 class="text-base font-bold text-slate-900 mt-1">Casting Highlight</h3>
-                </div>
-            </div>
-
-            <!-- BRAND ACTIVATION PREVIEW (Updated to jmfJK0thykQ) -->
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
-                <div class="relative w-full aspect-video">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/jmfJK0thykQ?modestbranding=1&rel=0" title="Brand Activation Video" allowfullscreen></iframe>
-                </div>
-                <div class="p-4 bg-white">
-                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
-                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Video</h3>
-                </div>
-            </div>
-
-            <!-- PHOTO PREVIEW (OPENS LIGHTBOX PHOTO 1) -->
-            <div onclick="openLightbox(0)" class="gallery-item photos relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition">
-                <img src="images/1.jpg" alt="Stage & Event Photo 1" class="w-full h-[250px] md:h-[285px] object-cover group-hover:scale-105 transition duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                    <span class="text-purple-400 font-bold text-xs uppercase">Photo Gallery</span>
-                    <h3 class="text-lg font-bold text-white">View Full Photo Archive (34 Photos)</h3>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- HIDDEN EXTRA VIDEO ITEMS (REVEALED ON CLICK) -->
-        <div id="extra-gallery-items" class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-6 hidden">
-            
-            <!-- STAGE HOSTING EXTRA -->
-            <div class="gallery-item stage relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <!-- STAGE HOSTING VIDEO 2 (Revealed on Stage Tab OR View More) -->
+            <div class="gallery-card stage relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="stage" data-tier="secondary">
                 <div class="relative w-full aspect-video">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/rSe1cspPKYU?modestbranding=1&rel=0" title="Stage Hosting Extra" allowfullscreen></iframe>
                 </div>
@@ -434,8 +397,19 @@
                 </div>
             </div>
 
-            <!-- CASTING EXTRAS -->
-            <div class="gallery-item casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <!-- SHOUTCASTING VIDEO 1 (Default Preview) -->
+            <div class="gallery-card casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition" data-category="casting" data-tier="preview">
+                <div class="relative w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/sJXhUiMystk?modestbranding=1&rel=0" title="Casting Highlight" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-amber-600 font-bold text-xs uppercase tracking-wider">Shoutcasting</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Casting Highlight</h3>
+                </div>
+            </div>
+
+            <!-- SHOUTCASTING VIDEO 2 (Revealed on Casting Tab OR View More) -->
+            <div class="gallery-card casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="casting" data-tier="secondary">
                 <div class="relative w-full aspect-video">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/4-NNWnIUUiM?modestbranding=1&rel=0" title="Casting Extra 1" allowfullscreen></iframe>
                 </div>
@@ -445,7 +419,8 @@
                 </div>
             </div>
 
-            <div class="gallery-item casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <!-- SHOUTCASTING EXTRA VIDEO 3 (Revealed on View More) -->
+            <div class="gallery-card casting relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="casting" data-tier="extra">
                 <div class="relative w-full aspect-video">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/OtJ5t6LRkeM?modestbranding=1&rel=0" title="Casting Extra 2" allowfullscreen></iframe>
                 </div>
@@ -455,8 +430,19 @@
                 </div>
             </div>
 
-            <!-- BRAND ACTIVATION EXTRAS -->
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <!-- BRAND ACTIVATION VIDEO 1 (Default Preview) -->
+            <div class="gallery-card activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition" data-category="activation" data-tier="preview">
+                <div class="relative w-full aspect-video">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/jmfJK0thykQ?modestbranding=1&rel=0" title="Brand Activation Video" allowfullscreen></iframe>
+                </div>
+                <div class="p-4 bg-white">
+                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
+                    <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Video</h3>
+                </div>
+            </div>
+
+            <!-- BRAND ACTIVATION VIDEO 2 (Revealed on Activation Tab OR View More) -->
+            <div class="gallery-card activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="activation" data-tier="secondary">
                 <div class="relative w-full aspect-[9/16] max-h-[350px] flex items-center justify-center">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/IGEaQmELU2c?modestbranding=1&rel=0" title="Brand Activation Short 1" allowfullscreen></iframe>
                 </div>
@@ -466,7 +452,8 @@
                 </div>
             </div>
 
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <!-- BRAND ACTIVATION EXTRAS (Revealed on View More) -->
+            <div class="gallery-card activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="activation" data-tier="extra">
                 <div class="relative w-full aspect-video">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/u20caVkmUQo?modestbranding=1&rel=0" title="Brand Activation Video 2" allowfullscreen></iframe>
                 </div>
@@ -476,7 +463,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <div class="gallery-card activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="activation" data-tier="extra">
                 <div class="relative w-full aspect-[9/16] max-h-[350px] flex items-center justify-center">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/LK6IVm50u-A?modestbranding=1&rel=0" title="Brand Activation Short 2" allowfullscreen></iframe>
                 </div>
@@ -486,7 +473,7 @@
                 </div>
             </div>
 
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <div class="gallery-card activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="activation" data-tier="extra">
                 <div class="relative w-full aspect-video">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/Mi03o8eKs_k?modestbranding=1&rel=0" title="Brand Activation Video 3" allowfullscreen></iframe>
                 </div>
@@ -496,13 +483,22 @@
                 </div>
             </div>
 
-            <div class="gallery-item activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition">
+            <div class="gallery-card activation relative rounded-2xl overflow-hidden border border-brand-border bg-slate-900 shadow-sm hover:shadow-lg transition hidden" data-category="activation" data-tier="extra">
                 <div class="relative w-full aspect-video">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/4fwBc1je0Qs?modestbranding=1&rel=0" title="Brand Activation Video 4" allowfullscreen></iframe>
                 </div>
                 <div class="p-4 bg-white">
                     <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Brand Activation</span>
                     <h3 class="text-base font-bold text-slate-900 mt-1">Brand Activation Video 4</h3>
+                </div>
+            </div>
+
+            <!-- PHOTO PREVIEW CARD USING 31.JPG (Visible on All Tab) -->
+            <div onclick="openLightbox(24)" class="gallery-card photos relative group overflow-hidden rounded-2xl border border-brand-border bg-white cursor-pointer shadow-sm hover:shadow-lg transition" data-category="photos" data-tier="preview">
+                <img src="images/31.JPG" alt="Stage & Event Photo 31" class="w-full h-[250px] md:h-[285px] object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                    <span class="text-purple-400 font-bold text-xs uppercase">Photo Gallery</span>
+                    <h3 class="text-lg font-bold text-white">View Full Photo Archive (34 Photos)</h3>
                 </div>
             </div>
 
@@ -951,8 +947,10 @@
         let selectedEra = 'all';
         let selectedRole = 'all';
         let currentLightboxIndex = 0;
+        let currentGalleryFilter = 'all';
+        let isGalleryExpanded = false;
         
-        // Exact 34 photo filenames matching your repository list (handling both .jpg and .JPG)
+        // Exact 34 photo filenames matching your repository list
         const photoFiles = [
             "1.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", 
             "17.jpg", "18.jpg", "19.jpg", "2.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", 
@@ -968,17 +966,22 @@
 
             photoFiles.forEach((filename, index) => {
                 const photoCard = document.createElement('div');
-                photoCard.className = "gallery-item photos relative group overflow-hidden rounded-2xl border border-brand-border bg-slate-100 animate-pulse cursor-pointer shadow-sm hover:shadow-xl transition mb-6 break-inside-avoid";
+                photoCard.className = "gallery-card photos relative group overflow-hidden rounded-2xl border border-brand-border bg-slate-100 animate-pulse cursor-pointer shadow-sm hover:shadow-xl transition mb-6 break-inside-avoid hidden";
+                photoCard.setAttribute('data-category', 'photos');
+                photoCard.setAttribute('data-tier', filename === '31.JPG' ? 'preview' : 'extra');
                 photoCard.setAttribute('onclick', `openLightbox(${index})`);
                 photoCard.innerHTML = `
                     <img src="images/${filename}" alt="Justin Villaseran Event Photo ${index + 1}" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" loading="lazy" onload="this.parentElement.classList.remove('bg-slate-100', 'animate-pulse')">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
                         <span class="text-purple-400 font-bold text-xs uppercase">Photo Gallery</span>
-                        <h3 class="text-lg font-bold text-white">Event Archive Photo #${index + 1}</h3>
+                        <h3 class="text-lg font-bold text-white">Event Archive Photo #${index + 1} (${filename})</h3>
                     </div>
                 `;
                 photosContainer.appendChild(photoCard);
             });
+
+            // Initial render of gallery based on 'all' tab & collapsed state
+            updateGalleryDisplay();
         });
 
         function renderEvents() {
@@ -1040,26 +1043,114 @@
         }
 
         function filterGallery(type, btn) {
+            currentGalleryFilter = type;
+            isGalleryExpanded = false; // Reset expansion when switching tabs
+
+            // Update button styles
             document.querySelectorAll('.gallery-btn').forEach(b => {
                 b.className = 'gallery-btn bg-white hover:bg-gray-100 border border-brand-border text-brand-muted px-5 py-2 rounded-xl font-bold text-sm transition shadow-xs';
             });
             btn.className = 'gallery-btn bg-brand-red text-white px-5 py-2 rounded-xl font-bold text-sm transition shadow-sm';
 
-            // Show full photos masonry container automatically if 'photos' filter is selected
+            // Reset view more button text & icon
+            document.getElementById('view-more-text').innerText = "View More Uploads";
+            document.getElementById('view-more-icon').className = "fa-solid fa-chevron-down text-xs text-brand-red";
+
+            updateGalleryDisplay();
+        }
+
+        function updateGalleryDisplay() {
+            const cards = document.querySelectorAll('.gallery-card');
             const photosGrid = document.getElementById('photos-grid-container');
-            if (type === 'photos') {
+            const viewMoreBtnContainer = document.getElementById('view-more-gallery-btn').parentElement;
+            const mainGrid = document.getElementById('gallery-grid');
+
+            // Handle photos tab specifically
+            if (currentGalleryFilter === 'photos') {
+                mainGrid.classList.add('hidden');
                 photosGrid.classList.remove('hidden');
-            } else {
-                photosGrid.classList.add('hidden');
+                viewMoreBtnContainer.style.display = 'block';
+
+                // Toggle photo visibility based on expansion
+                const photoCards = photosGrid.querySelectorAll('.gallery-card');
+                photoCards.forEach((card) => {
+                    const tier = card.getAttribute('data-tier');
+                    if (isGalleryExpanded || tier === 'preview') {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+
+                if (isGalleryExpanded) {
+                    document.getElementById('view-more-text').innerText = "Show Less";
+                    document.getElementById('view-more-icon').className = "fa-solid fa-chevron-up text-xs text-brand-red";
+                }
+                return;
             }
 
-            document.querySelectorAll('.gallery-item').forEach(item => {
-                if (type === 'all' || item.classList.contains(type)) {
-                    item.style.display = 'block';
+            // Normal video / default tabs
+            photosGrid.classList.add('hidden');
+            mainGrid.classList.remove('hidden');
+            viewMoreBtnContainer.style.display = 'block';
+
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const tier = card.getAttribute('data-tier'); // 'preview', 'secondary', 'extra'
+
+                if (category === 'photos') {
+                    // Handle photo preview card on 'all' tab
+                    if (currentGalleryFilter === 'all') {
+                        if (isGalleryExpanded) {
+                            card.classList.remove('hidden');
+                        } else {
+                            if (tier === 'preview') {
+                                card.classList.remove('hidden');
+                            } else {
+                                card.classList.add('hidden');
+                            }
+                        }
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                    return;
+                }
+
+                if (currentGalleryFilter === 'all') {
+                    // On 'All' tab: show preview items of each category, plus all items if expanded
+                    if (isGalleryExpanded) {
+                        card.classList.remove('hidden');
+                    } else {
+                        if (tier === 'preview') {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    }
                 } else {
-                    item.style.display = 'none';
+                    // On specific category tab (Stage, Casting, Brand Activations)
+                    if (category === currentGalleryFilter) {
+                        if (isGalleryExpanded) {
+                            // Show all items belonging to this category
+                            card.classList.remove('hidden');
+                        } else {
+                            // Show exactly 2 videos side-by-side (preview + secondary)
+                            if (tier === 'preview' || tier === 'secondary') {
+                                card.classList.remove('hidden');
+                            } else {
+                                card.classList.add('hidden');
+                            }
+                        }
+                    } else {
+                        card.classList.add('hidden');
+                    }
                 }
             });
+
+            if (isGalleryExpanded) {
+                document.getElementById('view-more-text').innerText = "Show Less";
+                document.getElementById('view-more-icon').className = "fa-solid fa-chevron-up text-xs text-brand-red";
+            }
         }
 
         function openEventsModal() {
@@ -1072,18 +1163,10 @@
         }
 
         function toggleGalleryExpansion() {
-            const extraItems = document.getElementById('extra-gallery-items');
-            const viewMoreText = document.getElementById('view-more-text');
-            const viewMoreIcon = document.getElementById('view-more-icon');
+            isGalleryExpanded = !isGalleryExpanded;
+            updateGalleryDisplay();
 
-            if (extraItems.classList.contains('hidden')) {
-                extraItems.classList.remove('hidden');
-                viewMoreText.innerText = "Show Less";
-                viewMoreIcon.className = "fa-solid fa-chevron-up text-xs text-brand-red";
-            } else {
-                extraItems.classList.add('hidden');
-                viewMoreText.innerText = "View More Uploads";
-                viewMoreIcon.className = "fa-solid fa-chevron-down text-xs text-brand-red";
+            if (!isGalleryExpanded) {
                 document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
             }
         }
@@ -1117,5 +1200,3 @@
     </script>
 </body>
 </html>
-
-```
