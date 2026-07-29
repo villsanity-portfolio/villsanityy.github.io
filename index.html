@@ -525,9 +525,18 @@
         <p class="text-brand-muted mb-8 max-w-xl mx-auto">Available for stage hosting, broadcast casting, panel desk hosting, and brand influencer collaborations worldwide.</p>
         
         <div class="flex flex-col items-center justify-center gap-6">
-            <a href="mailto:villsanity@gmail.com" class="bg-brand-red hover:bg-red-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center gap-3 shadow-md hover:shadow-lg">
-                <i class="fa-solid fa-envelope"></i> villsanity@gmail.com
-            </a>
+            <div class="relative inline-block">
+                <a href="mailto:villsanity@gmail.com" 
+                   id="email-btn"
+                   onclick="handleEmailClick(event)"
+                   class="bg-brand-red hover:bg-red-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center gap-3 shadow-md hover:shadow-lg cursor-pointer">
+                    <i class="fa-solid fa-envelope"></i> villsanity@gmail.com
+                </a>
+
+                <div id="copy-toast" class="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs font-semibold px-3.5 py-1.5 rounded-md shadow-lg opacity-0 pointer-events-none transition-all duration-200 flex items-center gap-1.5">
+                    <i class="fa-solid fa-check text-green-400"></i> Copied to clipboard!
+                </div>
+            </div>
 
             <div class="flex items-center justify-center gap-6 text-2xl text-brand-muted">
                 <a href="https://www.facebook.com/villsanityy/" target="_blank" class="hover:text-brand-red transition"><i class="fa-brands fa-facebook"></i></a>
@@ -1147,6 +1156,29 @@
             const filename = photoFiles[currentLightboxIndex];
             document.getElementById('lightbox-img').src = `images/${filename}`;
             document.getElementById('lightbox-caption').innerText = `Photo ${currentLightboxIndex + 1} of ${totalPhotos} (${filename})`;
+        }
+
+        function handleEmailClick(event) {
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || ('ontouchstart' in window && window.innerWidth < 768);
+            
+            if (!isMobile) {
+                event.preventDefault();
+                
+                const email = 'villsanity@gmail.com';
+                navigator.clipboard.writeText(email).then(() => {
+                    const toast = document.getElementById('copy-toast');
+                    
+                    toast.classList.remove('opacity-0', '-top-10');
+                    toast.classList.add('opacity-100', '-top-12');
+                    
+                    setTimeout(() => {
+                        toast.classList.remove('opacity-100', '-top-12');
+                        toast.classList.add('opacity-0', '-top-10');
+                    }, 2500);
+                }).catch(err => {
+                    console.error('Failed to copy email:', err);
+                });
+            }
         }
     </script>
 </body>
