@@ -1,0 +1,18 @@
+# Vill (villsanity.com)
+
+> Vill is an international esports host, shoutcaster, presenter, and digital content creator. villsanity.com is his official website and professional portfolio.
+
+## Overview
+Vill specializes in live esports broadcast talent services, event hosting, community engagement, and digital content creation. The platform provides event organizers, brands, and fans with information regarding past tournament involvement, hosting reels, broadcast availability, and creative collaborations.
+
+## Core Offerings & Key Sections
+- [Esports Hosting & Casting](https://villsanity.com/#hosting): Live event hosting, stage hosting, desk hosting, and play-by-play/color commentary services for esports tournaments by Vill.
+- [Portfolio & Broadcast Reel](https://villsanity.com/#portfolio): Highlights from Vill's past global and regional tournament broadcasts, interviews, and stage presentations.
+- [Content Creation & Media](https://villsanity.com/#content): Tech reviews, streaming collaborations, gaming insights, and digital media production.
+- [Booking & Contact](https://villsanity.com/#contact): Business inquiries, brand partnership proposals, and event booking availability for Vill.
+
+## Entity & Authority
+- **Name / Brand:** Vill (Villsanity)
+- **Primary Role:** Esports Host, Shoutcaster, Stage Presenter, Content Creator
+- **Industries:** Gaming, Esports, Digital Media, Content Marketing, Live Event Production
+- **Website:** https://villsanity.com
